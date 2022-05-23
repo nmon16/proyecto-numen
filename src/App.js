@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Cards from './Componentes/Cards'
+import './App.css'
+import Medioambiente from './Componentes/Medioambiente'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Medioambiente />
+
+      <h4 className="Titulo1">PAQUETES</h4>
+
+      <Cards />
+
     </div>
+
   );
 }
 
