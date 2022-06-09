@@ -3,10 +3,13 @@ import Cards from './Componentes/Cards'
 import './App.css'
 import Medioambiente from './Componentes/Medioambiente'
 import Tabs from './Componentes/Tabs'
+import NavBar from "./Componentes/NavBar";
 
 function App() {
   return (
     <div className="App">
+
+      <NavBar />
 
       <Medioambiente />
 
