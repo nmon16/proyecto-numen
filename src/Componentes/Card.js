@@ -1,6 +1,7 @@
 import React from 'react'
 import './card.css'
-import { Button } from 'react-bootstrap'
+import { Button } from '@mui/material'
+import {ShoppingCartRounded} from '@mui/icons-material'
 
 function Card({ tittle, imageSource, text }) {
     return (
@@ -14,7 +15,9 @@ function Card({ tittle, imageSource, text }) {
             <a href='#!' className='btn btn-outline-secondary border-0'>
                 Mas Info
             </a>
-            <Button variant="primary">Reservar</Button>{' '}
+            <Button variant="text" startIcon={<ShoppingCartRounded />}>
+              Reservar
+            </Button>{' '}
         </div >
     )
 }

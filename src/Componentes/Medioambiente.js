@@ -1,14 +1,12 @@
 import React from 'react'
 import './Medioambiente.css'
-import {ListGroup} from 'react-bootstrap'
-
-
+import { ListGroup } from 'react-bootstrap'
 
 function Medioambiente() {
     return (
         <div className='Medio-Body'>
             <ListGroup>
-                <ListGroup.Item>Viajes y campamentos en «superficies durables</ListGroup.Item>
+                <ListGroup.Item>Viajes y campamentos en superficies durables</ListGroup.Item>
                 <ListGroup.Item>Elimina los desechos correctamente</ListGroup.Item>
                 <ListGroup.Item>Deja lo que encuentres</ListGroup.Item>
                 <ListGroup.Item>Minimiza los impactos de la hoguera</ListGroup.Item>
@@ -17,7 +15,7 @@ function Medioambiente() {
             </ListGroup>
 
         </div>
-    )   
+    )
 }
 
 export default Medioambiente
