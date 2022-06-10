@@ -1,21 +1,40 @@
-import {NavbarContainer, NavbarWrapper, IconLogo} from './NavBars'
-import {GiCampingTent} from "react-icons/gi";
-
+import {
+  NavbarContainer,
+  NavbarWrapper,
+  IconLogo,
+  Menu,
+MenuItems,
+  MenuItemLink,
+} from "./NavBars";
+import { GiCampingTent } from "react-icons/gi";
 
 const NavBar = () => {
-
-    return (
-        <>
-        <NavbarContainer>
+  return (
+    <>
+      <NavbarContainer>
         <NavbarWrapper>
-         <GiCampingTent/>
-        <IconLogo>DeCamping.com</IconLogo>
+          <IconLogo>
+            <GiCampingTent size={"2em"} />
+            DeCamping.com
+          </IconLogo>
+          <Menu>
+            <MenuItems>
+              <MenuItemLink>Home</MenuItemLink>
+            </MenuItems>
+            <MenuItems>
+              <MenuItemLink>Servicios</MenuItemLink>
+            </MenuItems>
+            <MenuItems>
+              <MenuItemLink>Paquetes</MenuItemLink>
+            </MenuItems>
+            <MenuItems>
+              <MenuItemLink>Contactenos</MenuItemLink>
+            </MenuItems>
+          </Menu>
         </NavbarWrapper>
-        </NavbarContainer>
-        </>
-
-    );
-
+      </NavbarContainer>
+    </>
+  );
 };
 
 export default NavBar;

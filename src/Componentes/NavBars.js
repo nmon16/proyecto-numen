@@ -28,3 +28,31 @@ font-family: "Oswald"
 font-size: 1.2rem;
 color: orange;
 `;
+
+export const Menu = styled.ul`
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+export const MenuItems = styled.li`
+height: 100%;
+padding: 1rem 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+font-family: "Oswald";
+font-weight: 400;
+&:hover{
+    background-color: yellow;
+    border-bottom: 0.3rem solid yellow;
+    transition: 0.4s ease-in;
+}
+`
+
+export const MenuItemLink = styled.a`
+text-decoration: none;
+color: orange;
+`
