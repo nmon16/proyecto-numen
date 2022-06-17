@@ -3,7 +3,7 @@ import {
   NavbarWrapper,
   IconLogo,
   Menu,
-MenuItems,
+  MenuItems,
   MenuItemLink,
 } from "./NavBars";
 import { GiCampingTent } from "react-icons/gi";

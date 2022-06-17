@@ -46,9 +46,9 @@ font-size: 1.2rem;
 font-family: "Oswald";
 font-weight: 400;
 &:hover{
-    background-color: yellow;
+    background-color: grey;
     border-bottom: 0.3rem solid yellow;
-    transition: 0.4s ease-in;
+    transition: 0.7s ease-in;
 }
 `
 
