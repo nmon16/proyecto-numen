@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavBar />
 
-      <Banner/>
+      <Banner />
 
 
 
@@ -19,7 +19,9 @@ function App() {
 
       <Cards />
 
-      <Tabs />
+      <ToursContextProvider>
+        <Tabs />
+      </ToursContextProvider>
     </div>
   );
 }
