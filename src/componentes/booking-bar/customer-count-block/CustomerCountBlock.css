@@ -1,0 +1,28 @@
+.customer-count-block {
+
+    height: 100%;
+    background-color: white;
+    color: #2B2B2A;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left:1px;
+    width:120px;
+}
+
+.customer-count-block > .row {
+
+    line-height: calc(100px/3);
+    height: calc(100px/3);
+    text-align: center;
+}
+
+.block-counter-btn {
+
+    background: none;
+    border: none;
+}
+
+.block-counter-btn:hover {
+
+    font-size: large;
+}

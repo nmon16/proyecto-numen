@@ -1,0 +1,92 @@
+@keyframes showUp {
+
+    0%   { opacity: 0; height: 0%; }
+    100% { opacity: 0.95; height: 100%; }
+  }
+
+.calendar-panel {
+
+    border:none;
+    margin-left: 1px;
+    margin-top:1px;
+    padding: 10px;
+    color: #2B2B2A;
+    font-size: 12px;
+    background-color: white;
+    width: 241px;
+    border-radius:0 0 5px 5px;
+    animation: 0.25s showUp ease;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+}
+
+.calendar-panel > .row:first-of-type {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar-panel > .row {
+
+    animation: 0.25s showUp ease;
+}
+
+.btn-calendar-panel-month {
+
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.month-text {
+
+    padding: 0;
+    margin: 0;
+    min-width: 100px;
+}
+
+.departure-calendar-panel {
+
+    position: relative;
+    left:371px;
+}
+
+.arrival-calendar-panel {
+
+    position: relative;
+    left:250px;
+}
+
+.table-calendar-panel {
+
+    margin-bottom: 0px;
+}
+
+.borderless td, .borderless th {
+
+    border: none;
+}
+
+.selected-day {
+
+    font-weight: bolder;
+    color: #007bff;
+}
+
+.btn-calendar-day {
+
+    background: none;
+    border: none;
+}
+
+.btn-calendar-day:hover {
+
+    background-color: #007bff;
+    color: white;
+    border-radius:2px;
+}
+
+.btn-calendar-day:active {
+
+    opacity: 0.5;
+}

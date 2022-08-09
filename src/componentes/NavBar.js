@@ -3,8 +3,6 @@ import { useState } from "react";
 
 const NavBar = () => {
 
-
-
     const [isActive, setIsActive] = useState(false);
 
     const eventHandler = (e) => { 
@@ -19,7 +17,7 @@ const NavBar = () => {
     }
 
     const inputStylesActive = {
-        width: "300px",
+        width: "250px",
         transition: "width  1s",
         opacity: "1"
     }

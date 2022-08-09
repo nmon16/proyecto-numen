@@ -10,7 +10,7 @@ const [data, dispatch] = useReducer(reducer, [], () => {
 
 useEffect(() => { 
     const stringifiedData = JSON.stringify(data);
-    localStorage.setItem('items', stringifiedData);
+    localStorage.setItem('data', stringifiedData);
 }, [data])
 
 return [data, dispatch];

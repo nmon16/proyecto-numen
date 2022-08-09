@@ -1,0 +1,100 @@
+.booking-bar-container {
+
+    margin:5px;
+    width:734px;
+    min-width:734px;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.row {
+
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.booking-bar {
+
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.05);
+    width:734px;
+    min-width:734px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.booking-bar > .row > .col {
+
+    padding: 0px;
+    height: 100px;
+}
+
+.lowercase-text {
+
+    text-transform: lowercase;
+}
+
+.discrete-text {
+
+    color: grey;
+}
+
+.value-text {
+
+    color: #007bff;
+    font-size: 18px;
+}
+
+.booking-block:hover {
+
+    opacity: 1;
+}
+
+.booking-block {
+
+    opacity: 0.85;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.block-top-padding {
+
+    padding: 2px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* No Select */
+
+.noselect {
+    
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+
+/* Ripple effect */
+
+.ripple-effect {
+
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple-effect:hover {
+
+    background: #007bff radial-gradient(circle, transparent 1%, #007bff 1%) center/15000%;
+}
+
+.ripple-effect:active {
+
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}

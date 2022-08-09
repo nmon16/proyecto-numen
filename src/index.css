@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Roboto', sans-serif, 'pop';
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif, 'pop';
 }
 
 .active {
   background-color: #D4E4F7;
 }
-

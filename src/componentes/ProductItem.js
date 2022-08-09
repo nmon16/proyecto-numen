@@ -1,36 +1,52 @@
-import './card.css'
+// import "./card.css"
+import { Button } from '@mui/material'
+import { ShoppingCartRounded } from '@mui/icons-material'
+
+
 
 const ProductItem = ({ data, addToCart }) => {
 
-  let { id, name, price, text, imageSource } = data;
+  let { id, name, price, text, image } = data;
 
   return (
 
-    <div className="container d-flex justify-content-center align-items-center h-100">
-      <div className="row">
-        <div className='card'>
-          <div className='overflow'>
-            <img src={imageSource} alt='card_img' className='card-img-top' />
+    // <div classNameName="container d-flex justify-content-center align-items-center h-100">
+    //   <div classNameName="row">
+    //     <div classNameName='card'>
+    //       <div classNameName='overflow'>
+    //         <img src={image} alt='card_img' classNameName='card-img-top' />
+    //       </div>
+    //       <div classNameName='card-Body'></div>
+    //       <h4 classNameName='card-title'>{name}</h4>
+    //       <p classNameName='card-text text-secondary'>{text}</p>
+    //       <a href='#!' classNameName='btn btn-outline-secondary border-0'>{price}</a>
+    //       <Button classNameName='btn btn-outline-secondary border-0' style={{color:"red"}} onClick={() => addToCart(id)} variant="text" startIcon={<ShoppingCartRounded />}>
+    //         Reservar
+    //       </Button>
+    //     </div >
+    //   </div>
+    // </div>
+
+      <div className="col p-5">
+        <div className="card">
+          <img src={image} className="card-img-top" height="300px" alt="card_img" />
+          <div className="card-body">
+            <h5 className="card-title">{name}</h5>
+            <p className="card-text">{text}</p>
+            <p className="card-text">{price}</p>
           </div>
-          <div className='card-Body'></div>
-          <h4 className='card-title'>{name}</h4>
-          <p className='card-text text-secondary'>{text}</p>
-          <div >{price}</div>
-          <button className='btn btn-outline-secondary border-0' onClick={() => addToCart(id)}>Reservar</button>
-        </div >
+          <div className="card-footer">
+            <Button classNameName='btn btn-outline-secondary border-0' style={{ color: "red" }} onClick={() => addToCart(id)} variant="text" startIcon={<ShoppingCartRounded />}>
+              Reservar
+            </Button>
+          </div>
       </div>
-    </div>
 
-    // <div className="col-md-4" key={card.id}>
-    //   <Card tittle={card.name} imageSource={card.image} text={card.text} price={card.price} id={card.id} addToCart={addToCart} />
-    // </div>
-
-    // <div style={{ border: "thin solid gray", padding: "1rem" }}>
-    //   <h4>{name}</h4>
-    //   <h5>${price}.00</h5>
-    //   <button onClick={() => addToCart(id)}>Agregar</button>
-    // </div>
+      </div>
   );
-};
+}
+
 
 export default ProductItem;
+
+

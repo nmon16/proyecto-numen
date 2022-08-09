@@ -9,8 +9,6 @@ const Tabs = () => {
     const [index, setIndex] = useState(0)
     const tours = useContext(ToursContext);
     
-
-
     const containerStyle = { padding: '20px', border: 'outset' }
     const titleStyle = { textAlign: 'center', padding: '20px', }
     const navStyle = { textAlign: 'center'}
@@ -57,7 +55,6 @@ const Tabs = () => {
                                 <Col xl>{tour.video}</Col>
                                 <Col xl>{tour.image}</Col>
                             </Row>
-
 
                             <Row>
                                 <h4 style={contentStyle}> Destino: {tour.destination}</h4>

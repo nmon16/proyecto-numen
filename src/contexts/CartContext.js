@@ -1,13 +1,15 @@
 import { createContext, useReducer } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 import { ACTIONS, shoppingInitialState, shoppingReducer } from "../reducers/shoppingReducer";
+
 
 export const CartContext = createContext();
 
 function CartContextProvider({ children }) {
 
-    // const [items, dispatch] = useLocalStorage('items', [], shoppingReducer);
+    const [data, dispatch] = useLocalStorage('data', shoppingInitialState, shoppingReducer);
 
-    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+    // const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
     const addToCart = (id) => {
         console.log(id);
@@ -15,7 +17,6 @@ function CartContextProvider({ children }) {
     };
 
     const delFromCart = (id, all = false) => {
-        //console.log(id, all);
         if (all) {
             dispatch({ type: ACTIONS.REMOVE_ALL_FROM_CART, payload: id });
         } else {
@@ -28,7 +29,7 @@ function CartContextProvider({ children }) {
     };
 
     return (
-        <CartContext.Provider value={{ state, addToCart, delFromCart, clearCart }}>
+        <CartContext.Provider value={{ data, addToCart, delFromCart, clearCart }}>
             {children}
         </CartContext.Provider>
     )

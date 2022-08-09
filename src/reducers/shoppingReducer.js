@@ -1,4 +1,4 @@
-import image1 from '../ASES/f9.jpg'
+import image1 from '../ASES/viñedos.jpg'
 import image2 from '../ASES/rafting.jpg'
 import image3 from '../ASES/aconcagua.jpg'
 
@@ -30,7 +30,7 @@ export const shoppingInitialState = {
         id: 3,
         name: 'Aconcagua',
         image: image3,
-        text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, en la provincia de Mendoza, en el oeste de la República Argentina.',
+        text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.',
         price: '$190.000'
 
     },

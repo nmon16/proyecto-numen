@@ -1,0 +1,62 @@
+.brand-block {
+
+    height: 100%;
+    color: #2B2B2A;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: white;
+    width:250px;
+    border-radius: 5px 0 0 5px;
+} 
+
+.brand-block > .row {
+
+    margin: 0;
+    padding:0;
+}
+
+.brand-block > .row > .col {
+
+    display: flex;
+}
+
+.brand-block > .row > .col span {
+
+    width:100%;
+}
+
+.icon-stars {
+
+    font-size: 14px;
+    vertical-align: text-top;
+    color: #007bff;
+    margin-left:2px;
+}
+
+.brand-block > .row:first-of-type {
+
+    height: 65%;
+}
+
+.brand-block > .row:first-of-type > .col span {
+
+    font-size: 36px;
+    font-weight: 500;
+    align-self: flex-end;
+    vertical-align: text-bottom;
+}
+
+.brand-block > .row:last-of-type {
+
+    height: 35%;
+}
+
+.brand-block > .row:last-of-type > .col span {
+
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-start;
+    text-transform: none;
+    font-stretch: condensed;
+    padding-right: 5px;
+}
