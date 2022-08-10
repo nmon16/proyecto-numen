@@ -15,7 +15,7 @@ export const shoppingInitialState = {
         id: 1,
         name: 'Viñedos',
         image: image1,
-        text: 'Por su ubicacion geografica, la provincia de mendoza tiene buenas condiciones para la produccion de vino',
+        text: 'Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.',
         price: '$150.000'
     },
     {

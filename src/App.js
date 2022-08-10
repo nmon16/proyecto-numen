@@ -15,9 +15,8 @@ function App() {
       <CartContextProvider>
         <Header />
         <Carrousel></Carrousel>
-        <div className="h-[2000px] pt-8">
           <BookingForm />
-        </div>
+        
         <Body></Body>
         <ToursContextProvider>
           <Tabs></Tabs>
