@@ -12,159 +12,160 @@ import { cities } from "./cities"
 import React from "react"
 import "flatpickr/dist/themes/material_green.css"
 
-// const containerStyle = {
-//     // display: "flex",
-//     padding: "1.5rem",
-//     marginTop: "0.5rem",
-//     backgroundColor: "#ffffff",
-//     justifyContent: "space-between",
-//     borderRadius: "0.75rem",
-//     borderWidth: "1px",
-//     boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
-// }
+const containerStyle = {
+    // display: "flex",
+    padding: "1.5rem",
+    marginTop: "0.5rem",
+    backgroundColor: "#ffffff",
+    justifyContent: "space-between",
+    borderRadius: "0.75rem",
+    borderWidth: "1px",
+    boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+}
 
-// const inputCoreStyle = {
-//     paddingLeft: "1rem",
-//     paddingRight: "1.5rem",
-//     transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-//     width: "100%",
-//     height: "2.5rem",
-//     borderRadius: "9999px",
-//     borderWidth: "1px",
-//     borderColor: "#D1D5DB",
-//     appearance: "none",
-//     outline: "0"
-// }
+const inputCoreStyle = {
+    paddingLeft: "1rem",
+    paddingRight: "1.5rem",
+    transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
+    width: "100%",
+    height: "2.5rem",
+    borderRadius: "9999px",
+    borderWidth: "1px",
+    borderColor: "#D1D5DB",
+    appearance: "none",
+    outline: "0"
+}
 
-// const inputContainerStyle = {
-//     // display: "flex",
-//     // flexDirection: "column",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     width: "100%"
-// }
+const inputContainerStyle = {
+    // display: "flex",
+    // flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%"
+}
 
-// const labelStyle = {
-//     marginBottom: "0.25rem",
-//     fontWeight: "700",
-//     width: "100 %"
-// }
+const labelStyle = {
+    marginBottom: "0.25rem",
+    fontWeight: "700",
+    width: "100 %"
+}
 
-// // const buttonCoreStyle = {
-// //     display: "flex",
-// //     fontWeight: "700",
-// //     justifyContent: "center",
-// //     alignItems: "center",
-// //     height: "2.5rem",
-// //     borderRadius: "9999px"
-// // }
-
-// const swapButtonStyle = {
-//     fontWeight: "700",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     height: "2.5rem",
-//     borderRadius: "9999px",
-//     transitionProperty: "background-color, border - color, color, fill, stroke, opacity, box - shadow, transform",
-//     borderWidth: "50px",
-//     bordeeColor: "#D1D5DB"
-// }
-
-// const primaryButtonStyle = {
-//     backgroundcolor: "#10B981",
-//     color: "#ffffff",
+// const buttonCoreStyle = {
+//     display: "flex",
 //     fontWeight: "700",
 //     justifyContent: "center",
 //     alignItems: "center",
 //     height: "2.5rem",
 //     borderRadius: "9999px"
 // }
-// const guestOkButtonStyle = {
-//     width: "83.333333%", 
-//     fontWeight: "700",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     height: "2.5rem",
-//     borderRadius: "9999px",
-//     backgroundcolor: "#10B981",
-//     color: "#ffffff",
-// }
-// const searchButtonStyle = {
-//     backgroundColor: "green",
-//     borderRadius: "9999px",
-//     borderWidth: "1px",
-//     borderColor: "#6B7280",
-//     marginTop: "1.25rem",
-//     width: "100%",
-//     backgroundcolor: "#10B981",
-//     color: "#ffffff",
-//     fontWeight: "700",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     height: "2.5rem",
-// }
-// const iconContainerStyle = {
-//     position: "absolute",
-//     top: "0",
-//     right: "0",
-//     bottom: "0",
-//     paddingRight: "0.5rem",
-//     color: "#6B7280",
-//     alignItems: "center",
-//     height: "100%",
-//     cursor: "pointer",
-// }
-// const menuContainerStyle = { zIndex: "20" }
-// const menuStyle = {
-//     overflowY: "auto",
-//     overflowX: "hidden",
-//     zIndex: "20",
-//     backgroundColor: "#ffffff",
-//     transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-//     transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-//     transformTranslateY: "-1rem",
-//     borderRadius: "1.5rem",
-//     borderWidth: "1px",
-//     boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-// }
-// const textStyle = { color: "#374151", fontWeight: "700" }
-// const smallTextStyle = { color: "#6B7280", fontSize: "0.875rem", lineHeight: "1.25rem" }
-// const optionBaseStyle = {
-//     position: "relative",
-//     paddingTop: "0.5rem",
-//     paddingBottom: "0.5rem",
-//     paddingLeft: "1rem",
-//     paddingRight: "1rem",
-//     transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-//     transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)"
-// }
-// const optionContainerStyle = {
-//     transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-//     cursor: "pointer",
-//     overflowY: "auto",
-//     overflowX: "hidden",
-//     zIndex: "20",
-//     backgroundColor: "#ffffff",
-//     transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-//     transformTranslateY: "-1rem",
-//     borderRadius: "1.5rem",
-//     borderWidth: "1px",
-//     boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-// }
-// const guestButtonStyle = {
-//     overflow: "hidden",
-//     padding: "0.5rem",
-//     transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
-//     transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
-//     color: "#6B7280",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     height: "100%",
-//     borderRadius: "9999px",
-//     borderWidth: "1px",
-//     borderColor: "#6B7280",
-//     appearance: "none"
-// }
+
+const swapButtonStyle = {
+    fontWeight: "700",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "2.5rem",
+    borderRadius: "9999px",
+    transitionProperty: "background-color, border - color, color, fill, stroke, opacity, box - shadow, transform",
+    borderWidth: "50px",
+    bordeeColor: "#D1D5DB"
+}
+
+const primaryButtonStyle = {
+    backgroundcolor: "#10B981",
+    color: "#ffffff",
+    fontWeight: "700",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "2.5rem",
+    borderRadius: "9999px"
+}
+const guestOkButtonStyle = {
+    width: "83.333333%", 
+    fontWeight: "700",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "2.5rem",
+    borderRadius: "9999px",
+    backgroundcolor: "#10B981",
+    color: "#ffffff",
+}
+const searchButtonStyle = {
+    display: "flex",
+    borderRadius: "9999px",
+    borderWidth: "1px",
+    borderColor: "#6B7280",
+    marginTop: "1.25rem",
+    marginBottom:"1rem",
+    width: "100%",
+    backgroundColor: "#10B981",
+    color: "#ffffff",
+    fontWeight: "700",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "2.5rem",
+}
+const iconContainerStyle = {
+    position: "absolute",
+    top: "0",
+    right: "0",
+    bottom: "0",
+    paddingRight: "0.5rem",
+    color: "#6B7280",
+    alignItems: "center",
+    height: "100%",
+    cursor: "pointer",
+}
+const menuContainerStyle = { zIndex: "20" }
+const menuStyle = {
+    overflowY: "auto",
+    overflowX: "hidden",
+    zIndex: "20",
+    backgroundColor: "#ffffff",
+    transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
+    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+    transformTranslateY: "-1rem",
+    borderRadius: "1.5rem",
+    borderWidth: "1px",
+    boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+}
+const textStyle = { color: "#374151", fontWeight: "700" }
+const smallTextStyle = { color: "#6B7280", fontSize: "0.875rem", lineHeight: "1.25rem" }
+const optionBaseStyle = {
+    position: "relative",
+    paddingTop: "0.5rem",
+    paddingBottom: "0.5rem",
+    paddingLeft: "1rem",
+    paddingRight: "1rem",
+    transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
+    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)"
+}
+const optionContainerStyle = {
+    transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
+    cursor: "pointer",
+    overflowY: "auto",
+    overflowX: "hidden",
+    zIndex: "20",
+    backgroundColor: "#ffffff",
+    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+    transformTranslateY: "-1rem",
+    borderRadius: "1.5rem",
+    borderWidth: "1px",
+    boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+}
+const guestButtonStyle = {
+    overflow: "hidden",
+    padding: "0.5rem",
+    transitionProperty: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
+    transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+    color: "#6B7280",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    borderRadius: "9999px",
+    borderWidth: "1px",
+    borderColor: "#6B7280",
+    appearance: "none"
+}
 
 const Container = tw.div`md:rounded-full rounded-xl bg-white p-6 shadow-xl flex justify-between flex-col md:flex-row md:space-x-2 md:space-y-0 space-y-2 border border-gray-300`
 const InputCore = tw.input`relative w-full peer flex h-10 focus:outline-none appearance-none border border-gray-300 rounded-full outline-none transition pl-4 pr-6 group-hover:border-green-500 focus:border-green-500 cursor-pointer`
@@ -204,7 +205,7 @@ const InputComponent = React.forwardRef(
 )
 
 const GuestOptionComponent = ({ form, name, option }) => (
-    <OptionBase  className="flex items-center justify-between">
+    <OptionBase  className="flex items-center justify-between w-100">
         <div>
             <Text>{option.label}</Text>
             <SmallText >{option.description}</SmallText>
@@ -311,11 +312,14 @@ export const BookingForm = () => {
         alert(form.serializeToURLParams(config))
     }
 
+    // d-flex flex-wrap container mx-auto justify-content-center align-items-center
+
     return (
-        <Container  className="row">
-            <InputContainer  className="col" >
+        <Container  className="row container mx-auto">
+            <InputContainer  className="col-sm-2 " >
                 <Label >{"From"}</Label>
-                <LocationSelect 
+                <LocationSelect
+                    className="w-full"
                     form={form}
                     menu={Menu}
                     menuContainer={MenuContainer}
@@ -326,7 +330,7 @@ export const BookingForm = () => {
                     placeholder="Where are you going?"
                 />
             </InputContainer>
-            <InputContainer className="col">
+            <InputContainer className="col-sm-2">
                 <SwapButton 
                     title="Swap Locations"
                     aria-label="Swap Locations"
@@ -335,9 +339,10 @@ export const BookingForm = () => {
                     <IoMdSwap className="w-4 h-4" />
                 </SwapButton>
             </InputContainer>
-            <InputContainer  className="col">
+            <InputContainer  className="col-sm-2">
                 <Label >{"To"}</Label>
-                <LocationSelect 
+                <LocationSelect
+                    className="w-full" 
                     form={form}
                     menu={Menu}
                     menuContainer={MenuContainer}
@@ -348,7 +353,7 @@ export const BookingForm = () => {
                     placeholder="Where are you going?"
                 />
             </InputContainer>
-            <InputContainer  className="col">
+            <InputContainer  className="col-sm-2">
                 <Label >{"Check in"}</Label>
                 <DateInput
                     inputComponent={InputComponent}
@@ -358,7 +363,7 @@ export const BookingForm = () => {
                     name="checkIn"
                 />
             </InputContainer>
-            <InputContainer  className="col">
+            <InputContainer  className="col-sm-2">
                 <Label >{"Check out"}</Label>
                 <DateInput
                     inputComponent={InputComponent}
@@ -368,9 +373,9 @@ export const BookingForm = () => {
                     name="checkOut"
                 />
             </InputContainer>
-            <InputContainer className="col">
+            <InputContainer className="col-sm-2">
                 <Label >{"Guests"}</Label>
-                <GuestSelect 
+                <GuestSelect
                     form={form}
                     menuContainer={MenuContainer}
                     menu={Menu}
@@ -382,8 +387,8 @@ export const BookingForm = () => {
                     name={"guests"}
                 />
             </InputContainer>
-            <InputContainer  className="col">
-                <SearchButton  onClick={onBookButtonClick}>{"Search"}</SearchButton>
+            <InputContainer  className="col-sm-2 mx-auto">
+                <SearchButton style={searchButtonStyle} onClick={onBookButtonClick}>{"Search"}</SearchButton>
             </InputContainer>
         </Container>
     )

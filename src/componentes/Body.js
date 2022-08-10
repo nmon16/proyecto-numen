@@ -11,7 +11,7 @@ const Body = () => {
         <>
             <h2 style={titleStyle}>Paquetes</h2>
 
-            <div className="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-0" style={{padding:"30px"}}>
+            <div className="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-0">
                 {data.products.map((product) =>
                     <ProductItem key={product.id} data={product} addToCart={addToCart} />
                 )}
