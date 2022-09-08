@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
-import image1 from '../ASES/1amanecer.jpg'
-import image2 from '../ASES/2mañana.jpg'
-import image3 from '../ASES/3taza.jpg'
-import image4 from '../ASES/4arroyo.jpg'
-import image5 from '../ASES/5kayak.jpg'
-import image6 from '../ASES/6lago.jpg'
-import image7 from '../ASES/7atardecer.jpg'
-import image8 from '../ASES/8personas.jpg'
-import image9 from '../ASES/9fogata.jpg'
-import image10 from '../ASES/10banner_camping.jpg'
+import image1 from '../assets/img/1amanecer.jpg'
+import image2 from '../assets/img/2mañana.jpg'
+import image3 from '../assets/img/3taza.jpg'
+import image4 from '../assets/img/4arroyo.jpg'
+import image5 from '../assets/img/5kayak.jpg'
+import image6 from '../assets/img/6lago.jpg'
+import image7 from '../assets/img/7atardecer.jpg'
+import image8 from '../assets/img/8personas.jpg'
+import image9 from '../assets/img/9fogata.jpg'
+import image10 from '../assets/img/10banner_camping.jpg'
 import { Button } from 'react-bootstrap';
 
 
@@ -21,7 +21,7 @@ function Carrousel() {
         setIndex(selectedIndex);
     };
 
-    const carouselStyle = {padding:"0px 40px 40px 40px"}
+    const carouselStyle = {padding:"2px 40px 40px 40px"}
     // const carouseItemlStyle = {width:"1480px", height:"480px"}
 
     return (

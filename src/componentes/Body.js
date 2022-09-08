@@ -9,7 +9,7 @@ const Body = () => {
 
     return (
         <>
-            <h2 style={titleStyle}>Paquetes</h2>
+            <h2 style={titleStyle}>Paquetes en Mendoza</h2>
 
             <div className="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-0">
                 {data.products.map((product) =>

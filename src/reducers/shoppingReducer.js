@@ -1,6 +1,6 @@
-import image1 from '../ASES/viñedos.jpg'
-import image2 from '../ASES/rafting.jpg'
-import image3 from '../ASES/aconcagua.jpg'
+import image1 from '../assets/img/viñedos.jpg'
+import image2 from '../assets/img/rafting.jpg'
+import image3 from '../assets/img/aconcagua.jpg'
 
 export const ACTIONS = {
   ADD_TO_CART: "ADD_TO_CART",

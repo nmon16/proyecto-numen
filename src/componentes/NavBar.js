@@ -40,22 +40,22 @@ const NavBar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link" href="#home">Campings</a>
-                            </li>
+
                             <li className="nav-item">
                                 <a className="nav-link" href="#home">Paquetes</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#home">Ofertas</a>
                             </li>
 
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Excursiones</a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#home">Link</a></li>
-                                    <li><a className="dropdown-item" href="#home">Another link</a></li>
-                                    <li><a className="dropdown-item" href="#home">A third link</a></li>
+                                    <li><a className="dropdown-item" href="#home">El Calafate</a></li>
+                                    <li><a className="dropdown-item" href="#home">Puerto Iguazú</a></li>
+                                    <li><a className="dropdown-item" href="#home">Faro del Fin del Mundo</a></li>
+                                    <li><a className="dropdown-item" href="#home">Puerto Piramides</a></li>
+                                    <li><a className="dropdown-item" href="#home">Malargüe</a></li>
+                                    <li><a className="dropdown-item" href="#home">Cafayate</a></li>
+                                    <li><a className="dropdown-item" href="#home">Machu Pichu</a></li>
+
                                 </ul>
                             </li>
 
