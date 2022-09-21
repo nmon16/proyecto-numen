@@ -27,13 +27,13 @@ export const getCountryString = (countryValue) => {
         case "country1":
             return "Argentina";
         case "country2":
-            return "Brasil";
-        case "country3":
             return "Chile";
+        case "country3":
+            return "Perú";
         case "country4":
             return "Uruguay";
         default:
-            return "all countries";
+            return "todos los países";
     }
 }
 
@@ -56,15 +56,15 @@ export const getSizeString = (sizeValue) => {
 export const getPriceString = (priceValue) => {
     switch (priceValue) {
         case "price1":
-            return "economic";
+            return "categoría economic";
         case "price2":
-            return "comfort";
+            return "categoría comfort";
         case "price3":
-            return "premium";
+            return "categoría premium";
         case "price4":
-            return "deluxe";
+            return "categoría deluxe";
         case "all":
-            return "all category"
+            return "todas las categorías"
     }
 }
 
@@ -81,9 +81,9 @@ export const getDateString = (dateFromValue, dateToValue) => {
     let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
     if (dateFromValue !== "" && dateToValue !== "") {
-        let dateFromString = new Intl.DateTimeFormat('en-US', options).format(dateFrom);
-        let dateToString = new Intl.DateTimeFormat('en-US', options).format(new Date(dateTo));
-        return `from ${dateFromString} to ${dateToString}`;
+        let dateFromString = new Intl.DateTimeFormat('es-AR', options).format(dateFrom);
+        let dateToString = new Intl.DateTimeFormat('es-AR', options).format(new Date(dateTo));
+        return `desde el ${dateFromString} hasta el ${dateToString}`;
     }
     return "";
 }

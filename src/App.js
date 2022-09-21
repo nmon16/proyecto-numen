@@ -5,6 +5,7 @@ import CartContextProvider from "./contexts/CartContext";
 import Body from "./componentes/Body";
 import Carrousel from "./componentes/Carrousel";
 import Footer from "./componentes/Footer";
+import Booking from "./componentes/Booking";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <CartContextProvider>
         <Header />
         <Carrousel></Carrousel>
+        <Booking/>
         <Body></Body>
         <ToursContextProvider>
           <Tabs></Tabs>

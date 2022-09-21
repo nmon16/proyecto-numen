@@ -25,12 +25,13 @@ const NavBar = () => {
 
     return (
         <>
-            <nav style={{ width: "95%", borderRadius: "20px" }} className="navbar navbar-expand-sm bg-dark navbar-dark mx-auto">
+            <nav style={{ width: "95%", borderRadius: "20px", backgroundColor:"#341C09" }} className="navbar navbar-expand-sm navbar-dark mx-auto">
                 <div className="container">
 
                     <form>
                         <div className="d-flex">
-                            <button onClick={eventHandler} className="btn btn-dark" href="#home"><FaSearch size={20} /></button>
+                            <button style={{color:"white"}} onClick={eventHandler} className="btn" href="#home"><FaSearch size={20}/>
+                            </button>
                             <input style={isActive ? inputStylesActive : inputStyleInactive} className="form-control" placeholder="Busca tu destino..." ></input>
                         </div>
                     </form>

@@ -1,4 +1,4 @@
-import '../../assets/styles/Header/Header.scss';
+import '../assets/styles/BookingForm.scss';
 //Utils
 import { getFormattedToday, getCountryString, getSizeString, getPriceString, getDateString } from '../assets/data/utils';
 
@@ -15,42 +15,44 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
         onClearFilter();
     }
 
+
     return (
         <header className="Header">
-            <h1 className="Title">Book it!</h1>
-            <div className="Filter__Container">
-                <div className="Filter__Grid">
-                    <select className="Filter__Countries Filter-Icon" onChange={handleFilters} name="filter-countries" id="filter-countries" value={countryFilter.value}>
-                        <option value="all">All countries</option>
-                        <option value="country1">Argentina</option>
-                        <option value="country2">Brasil</option>
-                        <option value="country3">Chile</option>
-                        <option value="country4">Uruguay</option>
-                    </select>
-                    <input className="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" onChange={handleFilters} min={getFormattedToday()} max={dateToFilter.value} type="date" value={dateFromFilter.value} />
-                    <input className="Filter__DateTo Filter-Icon" name="date-to" id="date-to" onChange={handleFilters} type="date" min={dateFromFilter.value} value={dateToFilter.value} />
-                    <select className="Filter__Prices Filter-Icon" onChange={handleFilters} name="filter-prices" id="filter-prices" value={priceFilter.value}>
-                        <option value="all">All prices</option>
-                        <option value="price1">$</option>
-                        <option value="price2">$$</option>
-                        <option value="price3">$$$</option>
-                        <option value="price4">$$$$</option>
-                    </select>
-                    <select className="Filter__Sizes Filter-Icon" onChange={handleFilters} name="filter-sizes" id="filter-sizes" value={sizeFilter.value}>
-                        <option value="all">All sizes</option>
-                        <option value="size1">Small</option>
-                        <option value="size2">Medium</option>
-                        <option value="size3">Large</option>
-                    </select>
-                    <button className="Filter__Clear" onClick={handleClearButton}>Clear</button>
-                </div>
+        <div className="Filter__Container">
+            <div className="Filter__Grid">
+                <select className="Filter__Countries Filter-Icon" onChange={handleFilters} name="filter-countries" id="filter-countries" value={countryFilter.value}>
+                    <option value="all">Todos los países</option>
+                    <option value="country1">Argentina</option>
+                    <option value="country2">Chile</option>
+                    <option value="country3">Perú</option>
+                    <option value="country4">Uruguay</option>
+                </select>
+                <input className="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" onChange={handleFilters} min={getFormattedToday()} max={dateToFilter.value} type="date" value={dateFromFilter.value}/>
+                <input className="Filter__DateTo Filter-Icon" name="date-to" id="date-to" onChange={handleFilters} type="date" min={dateFromFilter.value} value={dateToFilter.value}/>
+                <select className="Filter__Prices Filter-Icon" onChange={handleFilters} name="filter-prices" id="filter-prices" value={priceFilter.value}>
+                    <option value="all">Todas las categorías</option>
+                    <option value="price1">Economic</option>
+                    <option value="price2">Comfort</option>
+                    <option value="price3">Premium</option>
+                    <option value="price4">Deluxe</option>
+                </select>
+                <select className="Filter__Sizes Filter-Icon" onChange={handleFilters} name="filter-sizes" id="filter-sizes" value={sizeFilter.value}>
+                    <option value="all">Indiferente</option>
+                    <option value="size1">1 a 4 personas</option>
+                    <option value="size2">4 a 9 personas</option>
+                    <option value="size3">10 a más personas</option>
+                </select>
+
+                <button className="Filter__Clear" onClick={handleClearButton}>Borrar</button>
             </div>
-            <div className="FoundMessage__Container">
-                <p className="FoundMessage__Title">We have found for you...</p>
-                <p className="FoundMessage__Content">{getSizeString(sizeFilter.value)} hotels of {getPriceString(priceFilter.value)} prices, {getDateString(dateFromFilter.value, dateToFilter.value)} in {getCountryString(countryFilter.value)}.</p>
-            </div>
-        </header>
-    );
+        </div>
+        <div className="FoundMessage__Container">
+            <p className="FoundMessage__Title">Encontramos para vos...</p>
+            <p className="FoundMessage__Content">Campings de {getPriceString(priceFilter.value)} {getDateString(dateFromFilter.value, dateToFilter.value)} en {getCountryString(countryFilter.value)}.</p>
+            <button className="Filter__Clear">Ver</button>
+        </div>
+    </header>        
+);
 }
 
 export default BookingForm;

@@ -16,14 +16,14 @@ export const shoppingInitialState = {
         name: 'Viñedos',
         image: image1,
         text: 'Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.',
-        price: '$150.000'
+        price: '500'
     },
     {
         id: 2,
         name: 'Rafting',
         image: image2,
         text : 'Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.',
-        price: '$170.000'
+        price: '600'
 
     },
     {
@@ -31,7 +31,7 @@ export const shoppingInitialState = {
         name: 'Aconcagua',
         image: image3,
         text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.',
-        price: '$190.000'
+        price: '700'
 
     },
 ],

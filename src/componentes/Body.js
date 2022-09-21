@@ -21,5 +21,3 @@ const Body = () => {
 }
 
 export default Body
-
-// card-group d-flex flex-wrap justify-content-around
