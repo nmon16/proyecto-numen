@@ -3,10 +3,10 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { useModal } from "../hooks/useModal";
 import { ACTIONS, shoppingInitialState, shoppingReducer } from "../reducers/shoppingReducer";
 
-
 export const CartContext = createContext();
 
 function CartContextProvider({ children }) {
+
 
     const [data, dispatch] = useLocalStorage('data', shoppingInitialState, shoppingReducer);
 

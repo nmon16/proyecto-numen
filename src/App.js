@@ -1,5 +1,4 @@
 import Tabs from "./componentes/Tabs";
-import ToursContextProvider from "./contexts/ToursContext";
 import Header from "./componentes/Header";
 import CartContextProvider from "./contexts/CartContext";
 import Body from "./componentes/Body";
@@ -14,11 +13,9 @@ function App() {
       <CartContextProvider>
         <Header />
         <Carrousel></Carrousel>
-        <Booking/>
+        <Booking />
         <Body></Body>
-        <ToursContextProvider>
-          <Tabs></Tabs>
-        </ToursContextProvider>
+        <Tabs></Tabs>
         <Footer></Footer>
       </CartContextProvider>
     </>
@@ -26,3 +23,6 @@ function App() {
 }
 
 export default App;
+
+
+

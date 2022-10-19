@@ -5,10 +5,12 @@ import { filtersData } from '../assets/data/data.js';
 import BookingForm from './BookingForm.js';
 
 
-
 const Booking = () => {
-    
+
+    //State
     const [filterList, setFilterList] = useState(filtersData);
+
+    //Handlers
     const handleGlobalFilters = (filterId, filterValue) => {
 
         let newFilterList = filterList.map(filter => {

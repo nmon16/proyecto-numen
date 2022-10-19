@@ -34,7 +34,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
     background: url("../img/checkin.svg") no-repeat;
     border: 1px solid rgb(128, 128, 128);
-    padding-left: 1.5rem !important;
+    // padding-left: 1.5rem !important;
     width: 100%;
 }
 
@@ -43,7 +43,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: relative;
     background: url("../img/checkout.svg") no-repeat;
     border: 1px solid rgb(128, 128, 128);
-    padding-left: 1.5rem !important;
+    // padding-left: 1.5rem !important;
     width: 100%;
 }
 
@@ -68,7 +68,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .Filter__Clear{
-    -webkit-appearance: none;
+    // -webkit-appearance: none;
     grid-area: clear;
     justify-self: flex-end;
     align-self: flex-end;

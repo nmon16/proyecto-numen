@@ -14,7 +14,7 @@ const Modals = () => {
 
   const [isOpenModal, openModal, closeModal] = useModal(false);
   const { data, delFromCart, clearCart } = useContext(CartContext)
-
+  const itemQuantity = data.cart.length
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -41,13 +41,14 @@ const Modals = () => {
           </div>
         </div>
         <article className="p-3">
-          {
+          {itemQuantity === 0  ?
+            <p>Carrito vacío</p> :
             data.cart.map((item, index) => (<CartItem key={index} data={item} delFromCart={delFromCart} />))
           }
         </article>
         <div className="d-flex justify-content-around">
           <p style={{ color: "black", fontSize: "25px" }}>Subtotal</p>
-          <span style={{ color: "red", fontSize: "25px" }}>USD {total}</span>
+          <span style={{ color: "#FEAB6D", fontSize: "25px" }}>USD {total}</span>
         </div>
         <Button style={{ display: "block", marginRight: "auto", marginLeft: "auto", fontSize: "18px" }}>
           <ShoppingCartCheckoutIcon />Check Out <ShoppingCartCheckoutIcon />

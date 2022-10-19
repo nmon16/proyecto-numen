@@ -1,195 +1,77 @@
-import React from 'react';
-import {
-    MDBFooter,
-    MDBContainer,
-    MDBIcon,
-    MDBInput,
-    MDBCol,
-    MDBRow,
-    MDBBtn
-} from 'mdb-react-ui-kit';
+import React from "react";
+import "./Footer.css";
+import image1 from '../assets/img/camping-world4.svg'
+import CopyrightIcon from '@mui/icons-material/Copyright';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
-function Footer() {
+const Footer = () => {
     return (
-        <MDBFooter style={{backgroundColor:"#341C09"}} className='text-center' color='white' >
-            <MDBContainer className='p-4'>
-                <section className='mb-4'>
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='facebook-f' />
-                    </MDBBtn>
+        <footer className="footer">
+            <div className="container p-4 pb-0" style={{backgroundColor:"#FC7307"}} >
+                <form action="" className="offset-md-2">
+                    
+                    <div className="row">
+                        <div className="col-auto mb-4 mb-md-0">
+                            <p className="pt-2">
+                                <strong>Suscríbase a nuestro boletín informativo</strong>
+                            </p>
+                        </div>
 
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='twitter' />
-                    </MDBBtn>
+                        <div className="col-md-5 col-12 mb-4 mb-md-0">
+                            <div className="form-outline mb-4">
+                                <input type="email" id="form5Example25" className="form-control" placeholder="Dirección de mail"/>
+                                <label className="form-label" for="form5Example25"></label>
+                            </div>
+                        </div>
 
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='google' />
-                    </MDBBtn>
-
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='instagram' />
-                    </MDBBtn>
-
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='linkedin-in' />
-                    </MDBBtn>
-
-                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-                        <MDBIcon fab icon='github' />
-                    </MDBBtn>
-                </section>
-
-                <section className=''>
-                    <form action=''>
-                        <MDBRow className='d-flex justify-content-center'>
-                            <MDBCol size="auto">
-                                <p className='pt-2'>
-                                    <strong>Sign up for our newsletter</strong>
-                                </p>
-                            </MDBCol>
-
-                            <MDBCol md='5' start='12'>
-                                <MDBInput contrast type='email' label='Email address' className='mb-4' />
-                            </MDBCol>
-
-                            <MDBCol size="auto">
-                                <MDBBtn outline color='light' type='submit' className='mb-4'>
-                                    Subscribe
-                                </MDBBtn>
-                            </MDBCol>
-                        </MDBRow>
-                    </form>
-                </section>
-
-                <section className='mb-4'>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-                        voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-                        sequi voluptate quas.
-                    </p>
-                </section>
-
-                <section className=''>
-                    <MDBRow>
-                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                            <h5 className='text-uppercase'>Links</h5>
-
-                            <ul className='list-unstyled mb-0'>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                            <h5 className='text-uppercase'>Links</h5>
-
-                            <ul className='list-unstyled mb-0'>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                            <h5 className='text-uppercase'>Links</h5>
-
-                            <ul className='list-unstyled mb-0'>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-
-                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-                            <h5 className='text-uppercase'>Links</h5>
-
-                            <ul className='list-unstyled mb-0'>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 3
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#!' className='text-white'>
-                                        Link 4
-                                    </a>
-                                </li>
-                            </ul>
-                        </MDBCol>
-                    </MDBRow>
-                </section>
-            </MDBContainer>
-
-            <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                © 2022 Copyright:
-                <a className='text-white' href='https://mdbootstrap.com/'>
-                    campingworld.com
-                </a>
+                        <div className="col-auto mb-4 mb-md-0">
+                            <button type="submit" className="btn mb-4" style={{backgroundColor:"#236AB9", color:"black"}}>
+                                Suscríbete
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </MDBFooter>
+            <div className="footer-container">
+                <div className="item1" style={{ paddingRight: "5px" }}>
+                    <img src={image1} height="20px"/>
+                </div>
+
+                <div className="item2">
+                    <span style={{ paddingRight: "5px" }}>Copyright </span>
+                    <CopyrightIcon/>{" "}
+                    <span style={{ paddingLeft: "5px" }}>
+                        {new Date().getFullYear()} Camping World. All Rights
+                        Reserved.
+                    </span>
+                </div>
+                <a
+                    href="https://www.instagram.com/campingworld/"
+                    target="_blank"
+                    className="item3"
+                >
+                    < InstagramIcon />
+                </a>
+                <a
+                    href="https://www.facebook.com/campingworld/"
+                    target="_blank"
+                    className="item4"
+                >
+                    <FacebookIcon />
+                </a>
+                <a
+                    href="https://www.youtube.com/c/campingworld"
+                    target="_blank"
+                    className="item5"
+                >
+                    <YouTubeIcon />
+                </a>
+
+            </div>
+        </footer>
     );
-}
+};
 
 export default Footer;

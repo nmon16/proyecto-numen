@@ -1,75 +1,59 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { ToursContext } from "../contexts/ToursContext";
 import { Col, Container, Row } from "react-bootstrap";
+import useAxios from "../hooks/useAxios";
 
 const Tabs = () => {
 
-    const [index, setIndex] = useState(0)
-    const tours = useContext(ToursContext);
-
+    const [tabIndex, setTabIndex] = useState(0)
     const containerStyle = { padding: '20px', border: 'outset', backgroundColor: "#FFEBDC" }
     const titleStyle = { textAlign: 'center', padding: '20px', }
     const navStyle = { textAlign: 'center' }
     const navItemStyle = { color: '#341C09' }
     const rowStyle = { padding: '30px' }
     const contentStyle = { padding: '10px', textAlign: 'justify' }
+    const { data, isLoading, error } = useAxios('http://localhost:8000/tab_data')
 
     return (
         <>
-            <div style={{ paddingBottom: "20px"}}>
+            <div style={{ paddingBottom: "20px" }}>
                 <h2 style={titleStyle}>Excursiones</h2>
-
                 <div style={containerStyle} className="container">
-
-                    <ul style={navStyle} className='nav nav-tabs d-flex justify-content-between'>
-                        <li className={`nav-item ${index === 0 ? 'active' : null}`} onClick={() => [setIndex(0)]}>
-                            <a id="0" style={navItemStyle} className="nav-link" href="#0">El Calafate</a>
-                        </li>
-                        <li className={`nav-item ${index === 1 ? 'active' : null}`} onClick={() => [setIndex(1)]}>
-                            <a id="1" style={navItemStyle} className="nav-link" href="#1">Puerto Iguazú</a>
-                        </li>
-                        <li className={`nav-item ${index === 2 ? 'active' : null}`} onClick={() => [setIndex(2)]}>
-                            <a id="2" style={navItemStyle} className="nav-link" href="#2">Faro del Fin del Mundo</a>
-                        </li>
-                        <li className={`nav-item ${index === 3 ? 'active' : null}`} onClick={() => [setIndex(3)]}>
-                            <a id="3" style={navItemStyle} className="nav-link" href="#3">Puerto Piramides</a>
-                        </li>
-                        <li className={`nav-item ${index === 4 ? 'active' : null}`} onClick={() => [setIndex(4)]}>
-                            <a id="4" style={navItemStyle} className="nav-link" href="#4">Malargüe</a>
-                        </li>
-                        <li className={`nav-item ${index === 5 ? 'active' : null}`} onClick={() => [setIndex(5)]}>
-                            <a id="5" style={navItemStyle} className="nav-link" href="#5">Cafayate</a>
-                        </li>
-                        <li className={`nav-item ${index === 6 ? 'active' : null}`} onClick={() => [setIndex(6)]}>
-                            <a id="6" style={navItemStyle} className="nav-link" href="#6">Machu Pichu</a>
-                        </li>
-                    </ul>
-
-                    <div>
-
-                        {tours.map(tour =>
-                            <Container fluid key={tour.id} hidden={index !== tour.id}>
-
-                                <Row style={rowStyle}>
-                                    <Col xl>{tour.video}</Col>
-                                    <Col xl>{tour.image}</Col>
-                                </Row>
-
-                                <Row>
-                                    <h4 style={contentStyle}> Destino: {tour.destination}</h4>
-                                    <p style={contentStyle}> {tour.description} </p>
-                                    <span style={contentStyle}> Detalles: {tour.details} </span>
-                                </Row>
-
-                            </Container>)}
-                    </div>
+                    {isLoading ? <div>Cargando petición...</div> :
+                        error.isError ? <div>Hubo un error: {error.message}</div> :
+                            data.length === 0 ? null :
+                                <div>
+                                    <ul style={navStyle} className='nav nav-tabs d-flex justify-content-between'>
+                                        {data.tours.map((tab, index) =>
+                                            <li key={index} className={`nav-item ${tabIndex === tab.id ? 'active' : null}`}           onClick={() => [setTabIndex(tab.id)]}>
+                                                <a id={tab.id} style={navItemStyle} className="nav-link" href={`# ${tab.id}`}>
+                                                    {tab.tour}
+                                                </a>
+                                            </li>)}
+                                    </ul>
+                                    {data.tours.map((tab, index) =>
+                                        <Container fluid key={index} hidden={tabIndex !== tab.id}>
+                                            <Row style={rowStyle}>
+                                                <Col xl>
+                                                    <iframe src={tab.video} width="100%" height="315" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                                                </Col>
+                                                <Col xl>
+                                                    <img src={require(`../assets/img/${tab.image}`)} width="100%" height="315" alt="img" />
+                                                </Col>
+                                            </Row>
+                                            <Row>
+                                                <h4 style={contentStyle}> Destino: {tab.destination}</h4>
+                                                <p style={contentStyle}> {tab.description} </p>
+                                                <span style={contentStyle}> Detalles: {tab.details} </span>
+                                            </Row>
+                                        </Container>)}
+                                </div>
+                    }
                 </div>
             </div>
         </>
     );
-
 }
 
 export default Tabs;

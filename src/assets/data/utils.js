@@ -5,7 +5,7 @@ import React from 'react';
 
 //Get formatted today to define minimum date in From Date input
 export function getFormattedToday() {
-    return formatDate(new Date().toLocaleDateString());
+    return formatDate(new Date());
 }
 
 //Format date used in getFormattedToday function
@@ -14,6 +14,7 @@ export function formatDate(date) {
         month = "" + (d.getMonth() + 1),
         day = "" + d.getDate(),
         year = d.getFullYear();
+
 
     if (month.length < 2) month = "0" + month;
     if (day.length < 2) day = "0" + day;

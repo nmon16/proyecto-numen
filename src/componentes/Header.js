@@ -2,15 +2,20 @@ import { FaRegUser, FaHome } from "react-icons/fa";
 import NavBar from "./NavBar";
 import image1 from "../assets/img/camping-world-22.svg"
 import { FaOpencart } from "react-icons/fa";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CartContent from "./CartContent";
 import Modal from "./Modal";
 import { useModal } from "../hooks/useModal";
 import { IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
+import Badge from '@mui/material/Badge';
+import { useContext } from "react";
+import { CartContext } from "../contexts/CartContext";
 
 const ShoppingCards = () => {
 
   const [isOpenModal, openModal, closeModal] = useModal(false);
+  const { data } = useContext(CartContext)
 
 
   return (
@@ -31,11 +36,13 @@ const ShoppingCards = () => {
           </li>
           {/* <Modals/> */}
           <button onClick={openModal} style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" >
-            <FaOpencart size={30} />
+            <Badge badgeContent={data.cart.length} color="primary">
+              <FaOpencart style={{ fontSize: "30px" }} />
+            </Badge>
           </button>
           <Modal isOpen={isOpenModal} closeModal={closeModal}>
-            <div  className='d-flex justify-content-end'>
-              <IconButton onClick={closeModal} className="bg-danger">
+            <div className='d-flex justify-content-end'>
+              <IconButton onClick={closeModal} className="bg-primary">
                 <CloseIcon />
               </IconButton>
             </div>

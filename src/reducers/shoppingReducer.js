@@ -38,7 +38,8 @@ export const shoppingInitialState = {
   cart: []
 };
 
-export function shoppingReducer(state, action) {
+
+export function shoppingReducer(state , action) {
   switch (action.type) {
     case ACTIONS.ADD_TO_CART: {
       let newItem = state.products.find(

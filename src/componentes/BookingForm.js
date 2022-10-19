@@ -1,6 +1,13 @@
 import '../assets/styles/BookingForm.scss';
-//Utils
-import { getFormattedToday, getCountryString, getSizeString, getPriceString, getDateString } from '../assets/data/utils';
+import { getFormattedToday, getCountryString, getPriceString, getDateString } from '../assets/data/utils';
+import { filtersData } from '../assets/data/data.js';
+import SearchResults from './SearchResult';
+import CampingList from './CampingList';
+import { hotelsData } from '../assets/data/data.js';
+import { filterHotels } from '../assets/data/utils';
+import { useState } from 'react';
+
+
 
 const BookingForm = ({ filters, onFilter, onClearFilter }) => {
     //State
@@ -15,44 +22,56 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
         onClearFilter();
     }
 
+    const [filterList] = useState(filtersData);
+    let filteredHotelList = filterHotels(hotelsData, filterList);
+
 
     return (
-        <header className="Header">
-        <div className="Filter__Container">
-            <div className="Filter__Grid">
-                <select className="Filter__Countries Filter-Icon" onChange={handleFilters} name="filter-countries" id="filter-countries" value={countryFilter.value}>
-                    <option value="all">Todos los países</option>
-                    <option value="country1">Argentina</option>
-                    <option value="country2">Chile</option>
-                    <option value="country3">Perú</option>
-                    <option value="country4">Uruguay</option>
-                </select>
-                <input className="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" onChange={handleFilters} min={getFormattedToday()} max={dateToFilter.value} type="date" value={dateFromFilter.value}/>
-                <input className="Filter__DateTo Filter-Icon" name="date-to" id="date-to" onChange={handleFilters} type="date" min={dateFromFilter.value} value={dateToFilter.value}/>
-                <select className="Filter__Prices Filter-Icon" onChange={handleFilters} name="filter-prices" id="filter-prices" value={priceFilter.value}>
-                    <option value="all">Todas las categorías</option>
-                    <option value="price1">Economic</option>
-                    <option value="price2">Comfort</option>
-                    <option value="price3">Premium</option>
-                    <option value="price4">Deluxe</option>
-                </select>
-                <select className="Filter__Sizes Filter-Icon" onChange={handleFilters} name="filter-sizes" id="filter-sizes" value={sizeFilter.value}>
-                    <option value="all">Indiferente</option>
-                    <option value="size1">1 a 4 personas</option>
-                    <option value="size2">4 a 9 personas</option>
-                    <option value="size3">10 a más personas</option>
-                </select>
+        <>
+            <header className="Header">
+                <div className="Filter__Container">
+                    <div className="Filter__Grid">
+                        <select className="Filter__Countries Filter-Icon" onChange={handleFilters} name="filter-countries" id="filter-countries" value={countryFilter.value}>
+                            <option value="all">Todos los países</option>
+                            <option value="country1">Argentina</option>
+                            <option value="country2">Chile</option>
+                            <option value="country3">Perú</option>
+                            <option value="country4">Uruguay</option>
+                        </select>
 
-                <button className="Filter__Clear" onClick={handleClearButton}>Borrar</button>
-            </div>
-        </div>
-        <div className="FoundMessage__Container">
-            <p className="FoundMessage__Title">Encontramos para vos...</p>
-            <p className="FoundMessage__Content">Campings de {getPriceString(priceFilter.value)} {getDateString(dateFromFilter.value, dateToFilter.value)} en {getCountryString(countryFilter.value)}.</p>
-            <button className="Filter__Clear">Ver</button>
-        </div>
-    </header>        
-);
+                        <input className="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" onChange={handleFilters} min={getFormattedToday()} max={dateToFilter.value} type="date" value={dateFromFilter.value} />
+
+                        <input className="Filter__DateTo Filter-Icon" name="date-to" id="date-to" onChange={handleFilters} type="date" min={dateFromFilter.value > getFormattedToday() ? dateFromFilter.value : getFormattedToday()} value={dateToFilter.value} />
+
+                        <select className="Filter__Prices Filter-Icon" onChange={handleFilters} name="filter-prices" id="filter-prices" value={priceFilter.value}>
+                            <option value="all">Todas las categorías</option>
+                            <option value="price1">Economic</option>
+                            <option value="price2">Comfort</option>
+                            <option value="price3">Premium</option>
+                            <option value="price4">Deluxe</option>
+                        </select>
+                        <select className="Filter__Sizes Filter-Icon" onChange={handleFilters} name="filter-sizes" id="filter-sizes" value={sizeFilter.value}>
+                            <option value="all">Indiferente</option>
+                            <option value="size1">1 a 4 personas</option>
+                            <option value="size2">4 a 9 personas</option>
+                            <option value="size3">10 a más personas</option>
+                        </select>
+
+                        <button className="Filter__Clear" onClick={handleClearButton}>Borrar</button>
+                    </div>
+                </div>
+                <div className="FoundMessage__Container">
+                    <p className="FoundMessage__Title">Encontramos para vos...</p>
+                    <p className="FoundMessage__Content">Campings de {getPriceString(priceFilter.value)} {getDateString(dateFromFilter.value, dateToFilter.value)} en {getCountryString(countryFilter.value)}.</p>
+                    <button className="Filter__Clear" data-bs-toggle="collapse" data-bs-target="#demo">Ver</button>
+                    <div id="demo" className="collapse" style={{ background: "white", color: "black", padding: "10px", marginTop: "10px" }}>
+                        <SearchResults hotels={<CampingList filteredHotels={filteredHotelList} />} />
+                    </div>
+                </div>
+            </header>
+        </>
+
+    );
 }
 
 export default BookingForm;

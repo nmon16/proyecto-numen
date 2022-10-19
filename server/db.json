@@ -1,0 +1,347 @@
+{
+    "cartInitialState": {
+        "products": [
+            {
+                "id": 1,
+                "name": "Viñedos",
+                "image": "viñedos.jpg",
+                "text": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
+                "price": "500"
+            },
+            {
+                "id": 2,
+                "name": "Rafting",
+                "image": "rafting.jpg",
+                "text": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
+                "price": "600"
+            },
+            {
+                "id": 3,
+                "name": "Aconcagua",
+                "image": "aconcagua.jpg",
+                "text": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
+                "price": "700"
+            }
+        ],
+        "cart": []
+    },
+    "carousel": {
+        "img": [
+            {
+                "id": 0,
+                "name": "1amanecer.jpg"
+            },
+            {
+                "id": 1,
+                "name": "2mañana.jpg"
+            },
+            {
+                "id": 2,
+                "name": "3taza.jpg"
+            },
+            {
+                "id": 3,
+                "name": "4arroyo.jpg"
+            },
+            {
+                "id": 4,
+                "name": "5kayak.jpg"
+            },
+            {
+                "id": 5,
+                "name": "6lago.jpg"
+            },
+            {
+                "id": 6,
+                "name": "7atardecer.jpg"
+            },
+            {
+                "id": 7,
+                "name": "8personas.jpg"
+            },
+            {
+                "id": 8,
+                "name": "9fogata.jpg"
+            },
+            {
+                "id": 9,
+                "name": "10banner_camping.jpg"
+            }
+        ]
+    },
+    "tab_data": {
+        "tours": [
+            {
+                "id": 0,
+                "tour": "El Calafate",
+                "destination": "Santa Cruz",
+                "description": "Anímate a conocer la Octava Maravilla del Mundo, el Glaciar Perito Moreno. Una puesta majestuosa de la naturaleza que deja sin aliento a sus visitantes. Está compuesto por inmensas masas de hielo que se desprenden año tras año y atrae a cientos de turistas. Rodeado de bosques y montañas que se funden entre si, forman el escenario perfecto para deslumbrarte y dejarte sin aliento. Al vivir esta experiencia, vas a tener la oportunidad de conocer una de las reservas de agua potable más importantes del mundo, caminar por sus pasarelas y aprender más sobre ésta sublime maravilla. Para ello, por la mañana nuestro guía pasará a buscarte por el hotel. Para llegar a destino, recorrerás los 80 km de distancia que separan a El Calafate del Glaciar Perito Moreno, único en el mundo en constante avance. Durante el trayecto conocerás hermosos lugares de la pre-cordillera andina, bordeando al margen sur del Lago argentino. Luego de cruzar los ríos Centinela y Mitre, llegarás al Brazo Rico para ingresar en el Parque Nacional “Los Glaciares”. Bordeando el Lago Rico comenzarás a divisar los témpanos flotando sobre el agua hasta que por fin podrás apreciar en toda su magnitud esta maravilla natural que ha sido declarada por las Naciones Unidas como Patrimonio de la humanidad. Pero esto no es todo, claro que no. Tendrás la posibilidad de recorrer los diversos trayectos que hacen las diferentes pasarelas y obtener diferentes perspectivas del lugar. Capturarás fotos para crear recuerdos inolvidables de este gran día. Además, gozarás de tiempo libre para comer un rico snack o disfrutar de una comida más abundante que podrás adquirir en restaurantes nativos. Al finalizar la excursión, y luego de haber pasado un día conectando con la magia de la naturaleza regresarás al hotel lleno de recuerdos e inolvidables sensaciones, que te dejarán con ganas de volver una vez más.",
+                "details": "menores a partir de 3 años cumplidos a 11 años cumplidos abonan tarifa “niños”.",
+                "video": "https://www.youtube.com/embed/MVTq5l5w9E4",
+                "image": "calafate.jpg"
+            },
+            {
+                "id": 1,
+                "tour": "Puerto Iguazú",
+                "destination": "Misiones",
+                "description": "El Parque de cataratas brasileras está ubicado en la ciudad Foz do Iguaçu y ocupa una superficie de 175.000 has. En primer lugar, se sorprenderá con el cuidado, la belleza y la enormidad del mismo que alberga innumerables especies de animales y vegetales. Y la naturaleza los recibirá con bienvenidas de simpáticas mariposas que se exhiben en su vuelo y lo deleitarán con sus colores. Dado que el 80% de los saltos se encuentran del lado argentino, el Parque brasileño cuenta con una sola pasarela de aproximadamente 1.000 mts. Desde allí podrán disfrutar de las distintas vistas panorámicas desde distintos ángulos. Asimismo podrá observar la fuerza con la que cae el agua de las cataratas que transmite una energía indescriptible digna de la magia de la naturaleza. Frente al salto Floriano, se encuentra un mirador al que podrán acceder a través de un elevador, del que se obtiene una de las vistas más imponentes de los Saltos. Por otra parte, el almuerzo es opcional y no está incluido. Recomendamos hacerlo disfrutando de las increíbles visitas que ofrecen las cataratas brasileras. Cabe destacar también, que el parque cuenta con una tienda de recuerdos, donde podrán adquirir souvenirs para llevar a casa y recordar esta increíble experiencia. También hay un kiosco donde podrán encontrar bebidas y distintos snacks, y restaurantes si lo que desean es una comida más completa. Este es el lugar perfecto para tomar un breve descanso y parar a almorzar. Durante el recorrido también podrán encontrar baños.",
+                "details": "menores hasta de 3 años no abona con 2 pagantes, sin derecho asiento.  A partir de 4 años cumplidos abonan tarifa “niños”. Salidas únicamente desde Iguazú. No incluye salidas desde Meliá Iguazú y hoteles ubicados en Zona de Granja, Barrio Belén, Barrio Santa Rosa, Barrio Orquídeas, fuera del ejido hotelero. Recomendaciones: llevar repelente de insectos, zapatillas y ropa cómoda.",
+                "video": "https://www.youtube.com/embed/je668DqhHVY",
+                "image": "cataratas.jpg"
+            },
+            {
+                "id": 2,
+                "tour": "Faro del Fin del Mundo",
+                "destination": "Usuhaia",
+                "description": "En esta increíble excursión prepárate para ser fascinado por el reconocido Canal de Beagle. Paso marítimo, ubicado en el extremo meridional de América del Sur, que conecta al océano Atlántico con el océano Pacífico. Por este canal se pueden realizar paseos únicos y disfrutar de los más fascinantes paisajes en la ciudad más austral del mundo. Es uno de los principales atractivos de Ushuaia, y en esta interesante excursión te llevamos a explorarlo. Para ello, partimos del puerto local en modernas embarcaciones, con un grupo reducido de pasajeros, hacia la deslumbrante Isla Alicia. Allí observaremos una colonia de leones marinos de un pelo. Luego ponemos proa hacia la Isla de los Pájaros, donde habitan las colonias de cormoranes reales e imperiales junto a sus nidos, pudiendo avistar a sus pichones desde la primavera hasta el otoño. Nuevamente ponemos rumbo hasta otra pequeña isla que, donde según la época del año, hay lobos marinos de dos pelos. Muy cerquita se encuentra el Faro Les Eclaireurs, auténtico y mítico símbolo de la ciudad de Ushuaia, construido en 1919. Éste se destaca por su impronta y su decoración, con vistosas rayas blancas y roja. Desde allí avistamos la isla de cormoranes roqueros. De regreso desembarcamos en la Isla Bridges, donde haremos una caminata para recorrer un sendero de interpretación de flora y avifauna, conocerá la historia de los aborígenes Yámanas y donde podrá observar, debido a que es la isla mas grande, la magnificencia del Canal Beagle con la Ciudad de Ushuaia a lo lejos. Durante la travesía compartiremos un rico y caliente té, chocolate o un buen café con licor y sabrosas galletitas.",
+                "details": "para realizar esta excursión debes presentarte 30 minutos antes en el muelle turístico. Nivel de caminata: fácil. Esta excursión puede sufrir variantes por motivos climáticos. Disponible en temporada de VERANO e INVIERNO. Los menores de 3 años no abonan, de 3 a 11 abonan tarifa de menor. Recomendaciones: llevar agua, calzado cómodo, capa para lluvia, cámara de fotos y anteojos de sol.",
+                "video": "https://www.youtube.com/embed/3TpSoR189Wo",
+                "image": "usuhaia.jpg"
+            },
+            {
+                "id": 3,
+                "tour": "Puerto Piramides",
+                "destination": "Chubut",
+                "description": "Península Valdés es una reserva natural de la Patagonia y se encuentra ubicada en la provincia de Chubut. Fue incorporada por la Unesco como Patrimonio de la Humanidad en 1999. En ella podemos encontrar animales marinos que habitan en el mar y las playas circundantes. Entre ellos se encuentran elefantes marinos, ballenas y lobos marinos. Para iniciar esta excursión a Península Valdés Sur, partimos temprano por la mañana hacia Península Valdés. Entre los puntos turísticos más destacados de la misma están: el Centro de Interpretación Istmo Ameghino. Este lugar servirá como punto de preparación para entender cuáles son las características de la biodiversidad de la zona y la interrelación que existe entre las especies animales, la geografía y el hombre. Luego visitaremos Puerto Pirámides, desde donde se realizan las navegaciones para el Avistaje de Ballenas. A continuación podrás ver desde el camino las Salinas Chica y Grande o El Gran Salitral; las cuales están entre las mayores depresiones de América; los apostaderos costeros de elefantes marinos en Punta Delgada y Punta Cantor; y pingüinos en Caleta Valdés. En el recorrido tendremos la posibilidad de ver mucha fauna terrestre como guanacos, maras, zorros, armadillos y choiques. Durante todo el día estarás asesorado por  nuestros guías, expertos intérpretes de la naturaleza patagónica. Al finalizar la excursión Península Valdés Sur, emprendemos el viaje de regreso a la ciudad.",
+                "details": "menores a partir de 4 años cumplidos a 11 años cumplidos abonan tarifa “niños”; menores de 4 años no abonan.",
+                "video": "https://www.youtube.com/embed/SXR_mToJ-Vc",
+                "image": "chubut.jpg"
+            },
+            {
+                "id": 4,
+                "tour": "Malargüe",
+                "destination": "Mendoza",
+                "description": "El volcán Malacara se encuentra a unos 43 Km. al sureste de la ciudad de Malargüe y tiene una altura de poco más de 1800 msnm. Su erupción es del tipo hidromagmática, la cual se produce cuando la lava entra en contacto con agua y se caracteriza por ser muy violenta. Alrededor de 10.000 años atrás se produjo su erupción. La erosión de las “tetras” (material volcánico depositado en finas láminas), el desgaste que aportan el agua y el viento a través del tiempo, han dado origen a pasadizos. Así como también cárcavas y chimeneas con casi 30 metros de altura. Su nombre hace referencia a la similitud con el rostro manchado de los caballos malacara. Tienen cabello oscuro y gran parte de la cara blanca. Comenzaremos esta excursión al Volcán Malacara desde el puesto Quesada. Y luego, iremos en vehículo hasta la base del volcán, y comenzaremos con la caminata a las entrañas de esta maravilla natural. El Trekking es de dificultad moderada y dura casi dos horas. Las sensaciones se exaltan al transitar las cárcavas de “Los Puentes”, la de “Tyto alba” (Lechuza Blanca, que anida en las abruptas paredes del Volcán) y las “Cárcavas Oscuras”. Al pasar de una cárcava a la otra, se llega a uno de los miradores más sorprendentes del área. Desde donde se observan la laguna del Llancanelo. En resumen, un hermoso espejo de agua con una biodiversidad excepcional. También es posible observar la antena DS3, la impactante Cordillera de los Andes y parte la concentración de volcanes más grande de América del Sur, La Payunia. Luego de disfrutar nuestra visita al Volcán Malacara emprendemos el viaje de regreso a Malargüe.",
+                "details": "no hay edad mínima realizar para la excursión, ideal para disfrutar en familia. Recomendaciones: llevar calzado adecuado para realizar las caminatas y abrigo. En verano es aconsejable llevar sombrero o gorro para sol, protector solar y agua.",
+                "video": "https://www.youtube.com/embed/FP5As-kSW6M",
+                "image": "malargue.jpg"
+            },
+            {
+                "id": 5,
+                "tour": "Cafayate",
+                "destination": "Salta",
+                "description": "Cafayate es una localidad de la provincia de Salta. Está ubicada en el corazón de los valles calchaquíes, rodeado de montañas multicolores. Es conocida mundialmente por tener la ruta del vino más alta del mundo.  Se encuentra a 2000 metros sobre el nivel del mar. Además, destacan en ella sus casonas coloniales, sus formaciones geológicas y sus colores, sus reconocidas bodegas y la exquisita gastronomía local. Para conocer esta singular localidad, comenzamos el recorrido por el Valle de Lerma. Atravesaremos campos de cultivo de tabaco y pueblos de arquitectura colonial como Alemania. Éste solía ser el punto final del ferrocarril Belgrano. Luego, ingresamos a la Quebrada del Río Las Conchas. Allí las curiosas formaciones erosionadas por el viento y el agua serán el principal atractivo: los médanos, el sapo, el obispo, la garganta del diablo, los castillos, el anfiteatro, entre otros. Luego continuamos por la ruta Nacional 68 llegando a Cafayate, la ciudad más joven de los Valles Calchaquíes. Reconocida a nivel internacional por las cepas de sus vinos, en particular el exquisito Torrontés. Podrá ser degustado en las visitas a sus bodegas, ya sean artesanales o de tipo industrial. Esta particular cepa autóctona produce un vino fresco y aromático, con una acidez moderada, una textura suave al paladar y aromas distintivos a melocotón y albaricoque. Luego de haber conocido esta espectacular e inigualable localidad, emprendemos el viaje de regreso a Salta por la misma ruta. Pero en esta ocasión lo haremos con una luz solar completamente distinta, cuya iluminación modificará el inigualable paisaje en la quebrada por completo.",
+                "details": "menores de hasta 3 años cumplidos free. Desde 4 años cumplidos a 6 años cumplidos abona tarifa “niños”. A partir de 7 años abona tarifa “adulto”. No incluye salidas desde San Lorenzo. Trasladarse por su cuenta al punto de encuentro.",
+                "video": "https://www.youtube.com/embed/Il9Pc99HI_g",
+                "image": "cafayate.jpg"
+            },
+            {
+                "id": 6,
+                "tour": "Machu Pichu",
+                "destination": "Perú",
+                "description": "Viaja al pasado y explora la impresionante cordillera de los Andes de Perú en una excursión con múltiples actividades por el Camino Inca. Adéntrate en la selva en tirolina, baja las montañas en bicicleta y más. Busca fauna y flora indígena y explora la antigua ciudadela de Machu Picchu. Durante el primer día, viaja desde Cuzco a Abra Malaga, a 4316 metros sobre el nivel del mar y recibe una sesión de entrenamiento de 20 minutos antes de bajar por los sinuosos caminos de montaña en bicicleta. Dirígete hacia Huamanmarca y descubre el pasado histórico del yacimiento arqueológico antes de comer. Desciende a una altitud de 1500 metros para llegar a la localidad de Santa María, en la selva, donde podrás descansar antes de cenar comida tradicional peruana. En el segundo día, disfruta de una taza de café indígena por la mañana antes de caminar hacia Santa Rosa para relajarte en las hamacas y admirar las plantaciones de coca cuando llegues. Recorre las empinadas cuestas del Camino Inca tal y como lo hacían los incas hace miles de años para llegar a Qellomayo para tomar un autobús hacia un hotel ecológico donde pasarás la noche. Elévate sobre las copas de los árboles en una tirolina de 2500 metros de cables suspendidos sobre la selva y date un baño en las termas de Cocalmayo antes de la cena. Al día siguiente, dirígete a la ciudad de Lucmabamba para comenzar una caminata de 3 horas y media hacia la cima de Llactapata, lejos de las masas. Maravíllate ante la cima de Salkantay y disfruta de un picnic para almorzar antes de una caminata de 2 horas hacia la estación de tren hidroeléctrico, donde tomarás el tren hacia Aguas Calientes. Disfruta de la cena en un restaurante local antes de pasar la noche en la localidad. Durante la última jornada, toma el primer autobús a Machu Picchu para ver el amanecer sobre la ciudad perdida de los incas y escucha explicaciones detalladas sobre el lugar ceremonial con ayuda de tu guía. Disfruta de tiempo libre para explorar a tu ritmo y aprovecha la oportunidad de subir a Wayna Picchu, por encima de las ruinas de la Ciudad Perdida. Regresa a Aguas Calientes en autobús para tomar el tren a Ollantaytambo y, después, continúa en autobús hacia Cuzco. ",
+                "details": "los niños de más de 10 años y de más de 1,5 metros de altura pueden montar solos Esta información se requiere por adelantado para confirmar tu reserva. Deberás llevar una pequeña mochila, un forro polar, buenos zapatos de trekking o botas, una chaqueta de lluvia o poncho, traje de baño, sandalias, toalla, repelente de insectos, camisetas y pantalones cortos, protector solar, gafas de sol, un sombrero, una linterna, cualquier medicación personal y tu pasaporte original. Trae un pasaporte válido el día del tour. Se recomienda traer dinero local en efectivo, ya que puede haber sitios que no acepten tarjetas de crédito. La entrada a Wayna Picchu está sujeta a disponibilidad. Deberás confirmarlo en la reserva. Este tour no se reembolsa una vez confirmado",
+                "video": "https://www.youtube.com/embed/lNIEZ61PyG0",
+                "image": "peru.jpg"
+            }
+        ]
+    },
+    "hotelsData": {
+        "hotel": [
+            {
+                "slug": "la-bamba-de-areco",
+                "name": "La Bamba de Areco",
+                "photo": "la-bamba-de-areco.jpg",
+                "description": "La Bamba de Areco is located in San Antonio de Areco, in the heart of the pampas. It is one of the oldest rooms in Argentina, recently restored to offer its guests all the comfort and colonial splendor.",
+                "rooms": 11,
+                "city": "Buenos Aires",
+                "country": "Argentina",
+                "price": 4
+            },
+            {
+                "slug": "sainte-jeanne",
+                "name": "Sainte Jeanne Boutique & Spa",
+                "photo": "sainte-jeanne.jpg",
+                "description": "Sainte Jeanne Hotel Boutique & Spa is located in the heart of Los Troncos, an elegant residential neighborhood of Mar del Plata. Luxury, comfort and passion for details give personality to this warm proposal.",
+                "rooms": 23,
+                "city": "Mar del Plata",
+                "country": "Argentina",
+                "price": 2
+            },
+            {
+                "slug": "entre-cielos",
+                "name": "Entre Cielos",
+                "photo": "entre-cielos.jpg",
+                "description": "Located in one of the largest wine-growing regions in Latin America, Entre Cielos was designed and built on an 8-hectare field surrounded by Malbec vineyards and an imposing view of the Andes Mountains.",
+                "rooms": 16,
+                "city": "Mendoza",
+                "country": "Argentina",
+                "price": 4
+            },
+            {
+                "slug": "huacalera",
+                "name": "Hotel Huacalera",
+                "photo": "huacalera.jpg",
+                "description": "This neocolonial house, built in the 1940s, is located in the heart of the Quebrada de Humahuaca, an extensive valley surrounded by imposing mountain ranges, crossed by the Rio Grande and declared a World Heritage Site in 2003.",
+                "rooms": 32,
+                "city": "Jujuy",
+                "country": "Argentina",
+                "price": 1
+            },
+            {
+                "slug": "merced-del-alto",
+                "name": "La Merced del Alto",
+                "photo": "merced-del-alto.jpg",
+                "description": "At the foot of the Nevado de Cachi, La Merced del Alto stands out over the picturesque valley surrounded by hills, rivers and streams. Dominating over the top, the hotel and its imposing views invite you to explore the Calchaquí Valley or simply to enjoy the peace of the place.",
+                "rooms": 14,
+                "city": "Salta",
+                "country": "Argentina",
+                "price": 2
+            },
+            {
+                "slug": "azur-real",
+                "name": "Azur Real Hotel",
+                "photo": "azur-real.jpg",
+                "description": "Exclusivity surrounded by history. Azur Real Hotel Boutique is located in the heart of the commercial area and the historic center of Córdoba, within one of the main cultural and tourist circuits of the city.",
+                "rooms": 16,
+                "city": "Córdoba",
+                "country": "Argentina",
+                "price": 1
+            },
+            {
+                "slug": "rincon-del-socorro",
+                "name": "Rincón del Socorro",
+                "photo": "rincon-del-socorro.jpg",
+                "description": "Rincón del Socorro is a ranch located in the Esteros del Iberá nature reserve, a wildlife sanctuary, where the Conservation Land Trust Foundation decided to develop an ambitious recovery and conservation project.",
+                "rooms": 11,
+                "city": "Corrientes",
+                "country": "Argentina",
+                "price": 2
+            },
+            {
+                "slug": "luma-casa-de-montana",
+                "name": "Luma Casa de Montaña",
+                "photo": "luma-casa-de-montana.jpg",
+                "description": "Located in a natural environment on the shores of Lake Nahuel Huapi and with the imposing image of the Andes Mountains, Luma Casa de Montaña is majestic but at the same time simple and homely: a different, timeless and magical place.",
+                "rooms": 8,
+                "city": "Villa La Angostura",
+                "country": "Argentina",
+                "price": 2
+            },
+            {
+                "slug": "casa-turquesa",
+                "name": "Casa Turquesa",
+                "photo": "casa-turquesa.jpg",
+                "description": "Casa Turquesa es una histórica mansión del siglo XVIII que recrea el encanto típico de Paraty, una de las herencias coloniales más bellas de Brasil, declarada Patrimonio Mundial de la Humanidad por la UNESCO.",
+                "rooms": 9,
+                "city": "Río de Janeiro",
+                "country": "Brasil",
+                "price": 3
+            },
+            {
+                "slug": "vila-da-santa",
+                "name": "Vila Da Santa",
+                "photo": "vila-da-santa.jpg",
+                "description": "This fishermans house was elegantly renovated, but without neglecting its original spirit. It opens onto a large central courtyard with two designer pools, one of which is heated.",
+                "rooms": 19,
+                "city": "Buzios",
+                "country": "Brasil",
+                "price": 3
+            },
+            {
+                "slug": "uxua-casa",
+                "name": "UXUA Casa Hotel & Spa",
+                "photo": "uxua-casa.jpg",
+                "description": "UXUA Casa Hotel & Spa is a five-star boutique hotel recognized worldwide for its incomparable tropical beauty, the wonderful bar with ocean views, the award-winning restaurant, a fully equipped gym and the unique Almescar spa that offers innovative treatments with ingredients extracted from the jungle.",
+                "rooms": 11,
+                "city": "Bahía",
+                "country": "Brasil",
+                "price": 4
+            },
+            {
+                "slug": "ponta-dos-ganchos",
+                "name": "Ponta dos Ganchos",
+                "photo": "ponta-dos-ganchos.jpg",
+                "description": "Located steps away from São Paulo, Rio de Janeiro, and even Buenos Aires, on a private peninsula and surrounded by a picturesque fishing village, is Ponta dos Ganchos, one of the most exclusive beach resorts in southern Brazil.",
+                "rooms": 25,
+                "city": "Santa Catarina",
+                "country": "Brasil",
+                "price": 4
+            },
+            {
+                "slug": "alto-atacama",
+                "name": "Alto Atacama",
+                "photo": "alto-atacama.jpg",
+                "description": "Alto Atacama Desert Lodge & Spa is a distinguished refuge located at the foot of the Pukará de Quitor in the imposing Atacama Desert in northern Chile.",
+                "rooms": 42,
+                "city": "San Pedro de Atacama",
+                "country": "Chile",
+                "price": 4
+            },
+            {
+                "slug": "tierra-patagonia",
+                "name": "Tierra Patagonia",
+                "photo": "tierra-patagonia.jpg",
+                "description": "Tierra Patagonia Hotel & Spa is a luxurious boutique hotel located in Chilean Patagonia on the shores of Lake Sarmiento, surrounded by the extraordinary natural scenery of Torres del Paine, a national park surrounded by mountains, waterfalls, glaciers, lakes and crags, declared a Reserve of the Biosphere by UNESCO in 1978.",
+                "rooms": 40,
+                "city": "Torres del Paine",
+                "country": "Chile",
+                "price": 4
+            },
+            {
+                "slug": "vira-vira",
+                "name": "Vira Vira",
+                "photo": "vira-vira.jpg",
+                "description": "Hotel Hacienda Vira Vira Relais & Chateaux is located in a privileged location, very close to Pucón, Chile. Its impressive 23-hectare native park on the banks of the Liucura River offers a unique oasis of peace and tranquility.",
+                "rooms": 21,
+                "city": "Pucón",
+                "country": "Chile",
+                "price": 4
+            },
+            {
+                "slug": "vik-chile",
+                "name": "Vik Chile",
+                "photo": "vik-chile.jpg",
+                "description": "Vik Chile is a modern and sophisticated hacienda where avant-garde art and design converge, an unparalleled location, fabulous natural settings, personalized service and careful attention to the environment.",
+                "rooms": 22,
+                "city": "Millahue",
+                "country": "Chile",
+                "price": 4
+            },
+            {
+                "slug": "casa-higueras",
+                "name": "Casa Higueras",
+                "photo": "casa-higueras.jpg",
+                "description": "Located in the heart of Cerro Alegre, facing the imposing bay of Valparaíso, is Casa Higueras, the ports first boutique and design hotel.",
+                "rooms": 20,
+                "city": "Valparaíso",
+                "country": "Chile",
+                "price": 4
+            },
+            {
+                "slug": "campo-tinto",
+                "name": "Campo Tinto",
+                "photo": "campo-tinto.jpg",
+                "description": "Campo Tinto is a 25-hectare farm located in the heart of San Roque, in the middle of the rolling Carmelo, an area of farms, vineyards, wineries and fruit trees, with a lot of history and a calm and natural rhythm of life.",
+                "rooms": 4,
+                "city": "Colonia",
+                "country": "Uruguay",
+                "price": 1
+            }
+        ]
+    },
+    "filtersData": {
+        "filters": [
+            {
+                "id": "filter-countries",
+                "value": "all"
+            },
+            {
+                "id": "filter-prices",
+                "value": "all"
+            },
+            {
+                "id": "filter-sizes",
+                "value": "all"
+            },
+            {
+                "id": "date-from",
+                "value": ""
+            },
+            {
+                "id": "date-to",
+                "value": ""
+            }
+        ]
+    }
+}
