@@ -1,8 +1,7 @@
-import { FaRegUser, FaHome } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import NavBar from "./NavBar";
 import image1 from "../assets/img/camping-world-22.svg"
 import { FaOpencart } from "react-icons/fa";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import CartContent from "./CartContent";
 import Modal from "./Modal";
 import { useModal } from "../hooks/useModal";
