@@ -31,9 +31,6 @@ const ShoppingCards = () => {
           <li className="nav-item">
             <a style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" ><FaHome size={30} /></a>
           </li>
-          <li className="nav-item">
-            <a style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" ><FaRegUser size={30} /></a>
-          </li>
           {/* <Modals/> */}
           <button onClick={openModal} style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" >
             <Badge badgeContent={data.cart.length} color="primary">
