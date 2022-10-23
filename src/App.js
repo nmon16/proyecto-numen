@@ -12,9 +12,9 @@ function App() {
     <>
       <CartContextProvider>
         <Header />
-        <Carrousel></Carrousel>
         <Booking />
         <Body></Body>
+        <Carrousel></Carrousel>
         <Tabs></Tabs>
         <Footer></Footer>
       </CartContextProvider>

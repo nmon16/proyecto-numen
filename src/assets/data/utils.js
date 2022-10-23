@@ -28,9 +28,9 @@ export const getCountryString = (countryValue) => {
         case "country1":
             return "Argentina";
         case "country2":
-            return "Chile";
+            return "Brasil";
         case "country3":
-            return "Perú";
+            return "Chile";
         case "country4":
             return "Uruguay";
         default:
@@ -90,23 +90,6 @@ export const getDateString = (dateFromValue, dateToValue) => {
 }
 
 //Fuctions used in HotelCard Component
-
-// Price Signs
-const PriceSign = () => {
-    return '$';
-};
-
-export const getPriceSigns = (signs) => {
-    let priceSigns = [];
-    for (let i = 0; i < signs; i++) {
-        priceSigns.push(
-            <PriceSign
-                key={"p-" + i.toString()}
-            />
-        );
-    }
-    return priceSigns;
-}
 
 //Prevent scroll when HotelCard is expanded in mobile version
 export function preventScroll() {

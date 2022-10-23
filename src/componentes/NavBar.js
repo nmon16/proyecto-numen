@@ -25,7 +25,7 @@ const NavBar = () => {
 
     return (
         <>
-            <nav style={{ width: "95%", borderRadius: "20px", backgroundColor:"#341C09" }} className="navbar navbar-expand-sm navbar-dark mx-auto">
+            <nav style={{ backgroundColor:"#341C09" }} className="navbar navbar-expand-sm navbar-dark mx-auto">
                 <div className="container">
 
                     <form>

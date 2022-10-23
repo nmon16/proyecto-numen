@@ -2,24 +2,36 @@
     "cartInitialState": {
         "products": [
             {
-                "id": 1,
+                "id": 0,
+                "slug": "viñedos",
                 "name": "Viñedos",
                 "image": "viñedos.jpg",
-                "text": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
+                "description": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
+                "rooms": 0,
+                "city": "Mendoza",
+                "country": "Argentina",
                 "price": "500"
             },
             {
-                "id": 2,
+                "id": 1,
+                "slug": "rafting",
                 "name": "Rafting",
                 "image": "rafting.jpg",
-                "text": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
+                "description": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
+                "rooms": 0,
+                "city": "Mendoza",
+                "country": "Argentina",
                 "price": "600"
             },
             {
-                "id": 3,
+                "id": 2,
+                "slug": "aconcagua",
                 "name": "Aconcagua",
                 "image": "aconcagua.jpg",
-                "text": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
+                "description": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
+                "rooms": 0,
+                "city": "Mendoza",
+                "country": "Argentina",
                 "price": "700"
             }
         ],
@@ -133,214 +145,6 @@
                 "details": "los niños de más de 10 años y de más de 1,5 metros de altura pueden montar solos Esta información se requiere por adelantado para confirmar tu reserva. Deberás llevar una pequeña mochila, un forro polar, buenos zapatos de trekking o botas, una chaqueta de lluvia o poncho, traje de baño, sandalias, toalla, repelente de insectos, camisetas y pantalones cortos, protector solar, gafas de sol, un sombrero, una linterna, cualquier medicación personal y tu pasaporte original. Trae un pasaporte válido el día del tour. Se recomienda traer dinero local en efectivo, ya que puede haber sitios que no acepten tarjetas de crédito. La entrada a Wayna Picchu está sujeta a disponibilidad. Deberás confirmarlo en la reserva. Este tour no se reembolsa una vez confirmado",
                 "video": "https://www.youtube.com/embed/lNIEZ61PyG0",
                 "image": "peru.jpg"
-            }
-        ]
-    },
-    "hotelsData": {
-        "hotel": [
-            {
-                "slug": "la-bamba-de-areco",
-                "name": "La Bamba de Areco",
-                "photo": "la-bamba-de-areco.jpg",
-                "description": "La Bamba de Areco is located in San Antonio de Areco, in the heart of the pampas. It is one of the oldest rooms in Argentina, recently restored to offer its guests all the comfort and colonial splendor.",
-                "rooms": 11,
-                "city": "Buenos Aires",
-                "country": "Argentina",
-                "price": 4
-            },
-            {
-                "slug": "sainte-jeanne",
-                "name": "Sainte Jeanne Boutique & Spa",
-                "photo": "sainte-jeanne.jpg",
-                "description": "Sainte Jeanne Hotel Boutique & Spa is located in the heart of Los Troncos, an elegant residential neighborhood of Mar del Plata. Luxury, comfort and passion for details give personality to this warm proposal.",
-                "rooms": 23,
-                "city": "Mar del Plata",
-                "country": "Argentina",
-                "price": 2
-            },
-            {
-                "slug": "entre-cielos",
-                "name": "Entre Cielos",
-                "photo": "entre-cielos.jpg",
-                "description": "Located in one of the largest wine-growing regions in Latin America, Entre Cielos was designed and built on an 8-hectare field surrounded by Malbec vineyards and an imposing view of the Andes Mountains.",
-                "rooms": 16,
-                "city": "Mendoza",
-                "country": "Argentina",
-                "price": 4
-            },
-            {
-                "slug": "huacalera",
-                "name": "Hotel Huacalera",
-                "photo": "huacalera.jpg",
-                "description": "This neocolonial house, built in the 1940s, is located in the heart of the Quebrada de Humahuaca, an extensive valley surrounded by imposing mountain ranges, crossed by the Rio Grande and declared a World Heritage Site in 2003.",
-                "rooms": 32,
-                "city": "Jujuy",
-                "country": "Argentina",
-                "price": 1
-            },
-            {
-                "slug": "merced-del-alto",
-                "name": "La Merced del Alto",
-                "photo": "merced-del-alto.jpg",
-                "description": "At the foot of the Nevado de Cachi, La Merced del Alto stands out over the picturesque valley surrounded by hills, rivers and streams. Dominating over the top, the hotel and its imposing views invite you to explore the Calchaquí Valley or simply to enjoy the peace of the place.",
-                "rooms": 14,
-                "city": "Salta",
-                "country": "Argentina",
-                "price": 2
-            },
-            {
-                "slug": "azur-real",
-                "name": "Azur Real Hotel",
-                "photo": "azur-real.jpg",
-                "description": "Exclusivity surrounded by history. Azur Real Hotel Boutique is located in the heart of the commercial area and the historic center of Córdoba, within one of the main cultural and tourist circuits of the city.",
-                "rooms": 16,
-                "city": "Córdoba",
-                "country": "Argentina",
-                "price": 1
-            },
-            {
-                "slug": "rincon-del-socorro",
-                "name": "Rincón del Socorro",
-                "photo": "rincon-del-socorro.jpg",
-                "description": "Rincón del Socorro is a ranch located in the Esteros del Iberá nature reserve, a wildlife sanctuary, where the Conservation Land Trust Foundation decided to develop an ambitious recovery and conservation project.",
-                "rooms": 11,
-                "city": "Corrientes",
-                "country": "Argentina",
-                "price": 2
-            },
-            {
-                "slug": "luma-casa-de-montana",
-                "name": "Luma Casa de Montaña",
-                "photo": "luma-casa-de-montana.jpg",
-                "description": "Located in a natural environment on the shores of Lake Nahuel Huapi and with the imposing image of the Andes Mountains, Luma Casa de Montaña is majestic but at the same time simple and homely: a different, timeless and magical place.",
-                "rooms": 8,
-                "city": "Villa La Angostura",
-                "country": "Argentina",
-                "price": 2
-            },
-            {
-                "slug": "casa-turquesa",
-                "name": "Casa Turquesa",
-                "photo": "casa-turquesa.jpg",
-                "description": "Casa Turquesa es una histórica mansión del siglo XVIII que recrea el encanto típico de Paraty, una de las herencias coloniales más bellas de Brasil, declarada Patrimonio Mundial de la Humanidad por la UNESCO.",
-                "rooms": 9,
-                "city": "Río de Janeiro",
-                "country": "Brasil",
-                "price": 3
-            },
-            {
-                "slug": "vila-da-santa",
-                "name": "Vila Da Santa",
-                "photo": "vila-da-santa.jpg",
-                "description": "This fishermans house was elegantly renovated, but without neglecting its original spirit. It opens onto a large central courtyard with two designer pools, one of which is heated.",
-                "rooms": 19,
-                "city": "Buzios",
-                "country": "Brasil",
-                "price": 3
-            },
-            {
-                "slug": "uxua-casa",
-                "name": "UXUA Casa Hotel & Spa",
-                "photo": "uxua-casa.jpg",
-                "description": "UXUA Casa Hotel & Spa is a five-star boutique hotel recognized worldwide for its incomparable tropical beauty, the wonderful bar with ocean views, the award-winning restaurant, a fully equipped gym and the unique Almescar spa that offers innovative treatments with ingredients extracted from the jungle.",
-                "rooms": 11,
-                "city": "Bahía",
-                "country": "Brasil",
-                "price": 4
-            },
-            {
-                "slug": "ponta-dos-ganchos",
-                "name": "Ponta dos Ganchos",
-                "photo": "ponta-dos-ganchos.jpg",
-                "description": "Located steps away from São Paulo, Rio de Janeiro, and even Buenos Aires, on a private peninsula and surrounded by a picturesque fishing village, is Ponta dos Ganchos, one of the most exclusive beach resorts in southern Brazil.",
-                "rooms": 25,
-                "city": "Santa Catarina",
-                "country": "Brasil",
-                "price": 4
-            },
-            {
-                "slug": "alto-atacama",
-                "name": "Alto Atacama",
-                "photo": "alto-atacama.jpg",
-                "description": "Alto Atacama Desert Lodge & Spa is a distinguished refuge located at the foot of the Pukará de Quitor in the imposing Atacama Desert in northern Chile.",
-                "rooms": 42,
-                "city": "San Pedro de Atacama",
-                "country": "Chile",
-                "price": 4
-            },
-            {
-                "slug": "tierra-patagonia",
-                "name": "Tierra Patagonia",
-                "photo": "tierra-patagonia.jpg",
-                "description": "Tierra Patagonia Hotel & Spa is a luxurious boutique hotel located in Chilean Patagonia on the shores of Lake Sarmiento, surrounded by the extraordinary natural scenery of Torres del Paine, a national park surrounded by mountains, waterfalls, glaciers, lakes and crags, declared a Reserve of the Biosphere by UNESCO in 1978.",
-                "rooms": 40,
-                "city": "Torres del Paine",
-                "country": "Chile",
-                "price": 4
-            },
-            {
-                "slug": "vira-vira",
-                "name": "Vira Vira",
-                "photo": "vira-vira.jpg",
-                "description": "Hotel Hacienda Vira Vira Relais & Chateaux is located in a privileged location, very close to Pucón, Chile. Its impressive 23-hectare native park on the banks of the Liucura River offers a unique oasis of peace and tranquility.",
-                "rooms": 21,
-                "city": "Pucón",
-                "country": "Chile",
-                "price": 4
-            },
-            {
-                "slug": "vik-chile",
-                "name": "Vik Chile",
-                "photo": "vik-chile.jpg",
-                "description": "Vik Chile is a modern and sophisticated hacienda where avant-garde art and design converge, an unparalleled location, fabulous natural settings, personalized service and careful attention to the environment.",
-                "rooms": 22,
-                "city": "Millahue",
-                "country": "Chile",
-                "price": 4
-            },
-            {
-                "slug": "casa-higueras",
-                "name": "Casa Higueras",
-                "photo": "casa-higueras.jpg",
-                "description": "Located in the heart of Cerro Alegre, facing the imposing bay of Valparaíso, is Casa Higueras, the ports first boutique and design hotel.",
-                "rooms": 20,
-                "city": "Valparaíso",
-                "country": "Chile",
-                "price": 4
-            },
-            {
-                "slug": "campo-tinto",
-                "name": "Campo Tinto",
-                "photo": "campo-tinto.jpg",
-                "description": "Campo Tinto is a 25-hectare farm located in the heart of San Roque, in the middle of the rolling Carmelo, an area of farms, vineyards, wineries and fruit trees, with a lot of history and a calm and natural rhythm of life.",
-                "rooms": 4,
-                "city": "Colonia",
-                "country": "Uruguay",
-                "price": 1
-            }
-        ]
-    },
-    "filtersData": {
-        "filters": [
-            {
-                "id": "filter-countries",
-                "value": "all"
-            },
-            {
-                "id": "filter-prices",
-                "value": "all"
-            },
-            {
-                "id": "filter-sizes",
-                "value": "all"
-            },
-            {
-                "id": "date-from",
-                "value": ""
-            },
-            {
-                "id": "date-to",
-                "value": ""
             }
         ]
     }

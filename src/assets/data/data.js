@@ -25,219 +25,237 @@ export const filtersData = [
 
 export const hotelsData = [
     {
-        slug: 'la-bamba-de-areco',
-        name: 'La Bamba de Areco',
+        id: 1,
+        slug: 'club-atletico-river-plate-areco',
+        name: 'Club Atlético River Plate Areco',
         photo: 'la-bamba-de-areco.jpg',
-        description: 'La Bamba de Areco is located in San Antonio de Areco, in the heart of the pampas. It is one of the oldest rooms in Argentina, recently restored to offer its guests all the comfort and colonial splendor.',
+        description: 'Ubicado sobre el río areco, a 10 cuadras del pueblo de San Antonio de Areco, se encuentra el camping y recreo Club River Plate Areco. El extenso predio cuenta con una hermosa arboleda con todas las comodidades para tus mejores vacaciones o escapadas de fin de semana.',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 864000000, // 10 days
         rooms: 11,
         city: 'Buenos Aires',
         country: 'Argentina',
-        price: 4
+        price: 400
     },
     {
-        slug: 'sainte-jeanne',
-        name: 'Sainte Jeanne Boutique & Spa',
+        id: 2,
+        slug: 'complejo-el-griego',
+        name: 'Complejo el Griego',
         photo: 'sainte-jeanne.jpg',
-        description: 'Sainte Jeanne Hotel Boutique & Spa is located in the heart of Los Troncos, an elegant residential neighborhood of Mar del Plata. Luxury, comfort and passion for details give personality to this warm proposal.',
+        description: 'Cuenta con 20 hectáreas con una variada y frondosa arboleda de más de 30 años, así Ud. decidirá donde acampar con la sombra necesaria para su merecido descanso.',
         availabilityFrom: today.valueOf() + 864000000, // 10 days
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 23,
         city: 'Mar del Plata',
         country: 'Argentina',
-        price: 2
+        price: 200
     },
     {
-        slug: 'entre-cielos',
-        name: 'Entre Cielos',
+        id: 3,
+        slug: 'camping-el-azufre',
+        name: 'Camping El Azufre',
         photo: 'entre-cielos.jpg',
-        description: 'Located in one of the largest wine-growing regions in Latin America, Entre Cielos was designed and built on an 8-hectare field surrounded by Malbec vineyards and an imposing view of the Andes Mountains.',
+        description: 'Un lugar ideal para una escapada de fin de semana escondido en el pequeño pueblo de Malargüe con impresionantes vistas de las montañas de Mendoza. La Reserva de Vida Silvestre está cerca, y los campistas pueden aprovechar el increíble lago nacional.',
         availabilityFrom: today.valueOf() + 432000000, // 5 days
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 16,
         city: 'Mendoza',
         country: 'Argentina',
-        price: 4
+        price: 400
     },
     {
-        slug: 'huacalera',
-        name: 'Hotel Huacalera',
+        id: 4,
+        slug: 'lo-del-gaucho',
+        name: 'Lo del Gaucho',
         photo: 'huacalera.jpg',
-        description: 'This neocolonial house, built in the 1940s, is located in the heart of the Quebrada de Humahuaca, an extensive valley surrounded by imposing mountain ranges, crossed by the Rio Grande and declared a World Heritage Site in 2003.',
+        description: 'Se encuentra a 25 km del cerro de los Siete Colores y a 4,8 km de Villa Florida, cerca de Tilcara. Los alojamientos disponen de zona de cocina con hervidor de agua, zona de comedor y baño privado con ducha. El camping cuenta con terraza y jardín.',
         availabilityFrom: today.valueOf() + 1728000000, // 20 days
         availabilityTo: today.valueOf() + 2592000000, // 30 days
         rooms: 32,
-        city: 'Jujuy',
+        city: 'Tilcara',
         country: 'Argentina',
-        price: 1
+        price: 100
     },
     {
-        slug: 'merced-del-alto',
-        name: 'La Merced del Alto',
+        id: 5,
+        slug: 'camping-carlos-xamena',
+        name: 'Camping Carlos Xamena',
         photo: 'merced-del-alto.jpg',
-        description: 'At the foot of the Nevado de Cachi, La Merced del Alto stands out over the picturesque valley surrounded by hills, rivers and streams. Dominating over the top, the hotel and its imposing views invite you to explore the Calchaquí Valley or simply to enjoy the peace of the place.',
+        description: 'Este lugar de campamento se sienta en una cubierta de cedro elevada. Afuera, los campistas descubrirán de inmediato una barbacoa y una mesa de picnic. Los huéspedes tendrán acceso directo a la costa arenosa del río, junto con un valle boscoso lleno de vida silvestre',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 432000000, // 5 days
         rooms: 14,
         city: 'Salta',
         country: 'Argentina',
-        price: 2
+        price: 200
     },
     {
-        slug: 'azur-real',
-        name: 'Azur Real Hotel',
+        id: 6,
+        slug: 'camping-estancia-la-victoria',
+        name: 'Camping Estancia La Victoria',
         photo: 'azur-real.jpg',
-        description: 'Exclusivity surrounded by history. Azur Real Hotel Boutique is located in the heart of the commercial area and the historic center of Córdoba, within one of the main cultural and tourist circuits of the city.',
+        description: 'Cuenta con 50 Hectáreas, una amplia zona de Camping para turismo y zonas especiales para contingentes grandes, y un espacio hermoso en medio de las montañas, ideal para turismo aventura, al lado de un bello arroyo en medio de bosquecitos.',
         availabilityFrom: today.valueOf() + 1296000000, // 15 days 
         availabilityTo: today.valueOf() + 2592000000, // 30 days
         rooms: 16,
         city: 'Córdoba',
         country: 'Argentina',
-        price: 1
+        price: 100
     },
     {
-        slug: 'rincon-del-socorro',
-        name: 'Rincón del Socorro',
+        id: 7,
+        slug: 'complejo-don-quico',
+        name: 'Complejo Don Quico',
         photo: 'rincon-del-socorro.jpg',
-        description: 'Rincón del Socorro is a ranch located in the Esteros del Iberá nature reserve, a wildlife sanctuary, where the Conservation Land Trust Foundation decided to develop an ambitious recovery and conservation project.',
+        description: 'El complejo posee 400 metros frente al Río Paraná, regalando extraordinarias postales desde sus barrancas. Se trata de un predio totalmente natural, donde podrán encontrar árboles con más de 100 años, avistar una gran cantidad de aves, monos carayá y demás fauna autóctona.',
         availabilityFrom: today.valueOf() + 432000000, // 5 days
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 11,
         city: 'Corrientes',
         country: 'Argentina',
-        price: 2
+        price: 200
     },
     {
+        id: 8,
         slug: 'luma-casa-de-montana',
         name: 'Luma Casa de Montaña',
         photo: 'luma-casa-de-montana.jpg',
-        description: 'Located in a natural environment on the shores of Lake Nahuel Huapi and with the imposing image of the Andes Mountains, Luma Casa de Montaña is majestic but at the same time simple and homely: a different, timeless and magical place.',
+        description: 'Situada al sur de la Provincia de Neuquén, a unos 820 metros sobre en nivel del mar en una topografía típicamente cordillerana al pie de los cerros Bayo, Inacayal y Belvedere. En invierno el centro de esquí Cerro Bayo (a 3 Km. de nuestro complejo) ofrece la práctica de deportes invernales.',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 8,
         city: 'Villa La Angostura',
         country: 'Argentina',
-        price: 2
+        price: 200
     },
     {
-        slug: 'casa-turquesa',
-        name: 'Casa Turquesa',
+        id: 9,
+        slug: 'ghaya-mini-camping',
+        name: 'Ghaya Mini Camping',
         photo: 'casa-turquesa.jpg',
-        description: 'Casa Turquesa es una histórica mansión del siglo XVIII que recrea el encanto típico de Paraty, una de las herencias coloniales más bellas de Brasil, declarada Patrimonio Mundial de la Humanidad por la UNESCO.',
+        description: 'Ofrece vistas a la montaña y se encuentra en Florianópolis. Los huéspedes podrán practicar senderismo y pesca en las inmediaciones  o aprovechar al máximo el jardín. La isla de Campeche se encuentra a 2 km del camping, mientras que el centro comercial Iguatemi Florianópolis está a 15 km.',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 432000000, // 5 days
         rooms: 9,
-        city: 'Río de Janeiro',
+        city: 'Florianópolis',
         country: 'Brasil',
-        price: 3
+        price: 300
     },
     {
-        slug: 'vila-da-santa',
-        name: 'Vila Da Santa',
+        id: 10,
+        slug: 'la-brume-trailers',
+        name: 'La Brume Trailers',
         photo: 'vila-da-santa.jpg',
-        description: "This fisherman's house was elegantly renovated, but without neglecting its original spirit. It opens onto a large central courtyard with two designer pools, one of which is heated.",
+        description: "Está situado a menos de 1 km de Capivari y ofrece desayuno continental o a la carta en el camping. Cerca de La Brume Glamping se pueden encontrar lugares de interés como el club de tenis de Campos do Jordão, el centro comercial Cadij y la cervecería Baden Baden.",
         availabilityFrom: today.valueOf() + 864000000, // 10 days
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 19,
-        city: 'Buzios',
+        city: 'Campos do Jordão',
         country: 'Brasil',
-        price: 3
+        price: 300
     },
     {
-        slug: 'uxua-casa',
-        name: 'UXUA Casa Hotel & Spa',
+        id: 11,
+        slug: 'floresta-encantada',
+        name: 'Floresta Encantada',
         photo: 'uxua-casa.jpg',
-        description: 'UXUA Casa Hotel & Spa is a five-star boutique hotel recognized worldwide for its incomparable tropical beauty, the wonderful bar with ocean views, the award-winning restaurant, a fully equipped gym and the unique Almescar spa that offers innovative treatments with ingredients extracted from the jungle.',
+        description: 'Está situado a 8,6 km de Praia Grande y ofrece alojamiento con terraza, cocina totalmente equipada con horno y nevera. Algunos tienen balcón y/o patio con vistas a la montaña o al río. El camping cuenta con barbacoa y jardín. En las inmediaciones se puede practicar snorkel. A 9,4 km se encuentra Praia Vermelha.',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 864000000, // 10 days
         rooms: 11,
-        city: 'Bahía',
+        city: 'Ubatuba',
         country: 'Brasil',
-        price: 4
+        price: 400
     },
     {
-        slug: 'ponta-dos-ganchos',
-        name: 'Ponta dos Ganchos',
+        id: 12,
+        slug: 'recanto-do-vale',
+        name: 'Recanto do Vale',
         photo: 'ponta-dos-ganchos.jpg',
-        description: 'Located steps away from São Paulo, Rio de Janeiro, and even Buenos Aires, on a private peninsula and surrounded by a picturesque fishing village, is Ponta dos Ganchos, one of the most exclusive beach resorts in southern Brazil.',
+        description: 'El Recanto do Vale se encuentra en Pomerode, a 37 km de Brusque, 13 km de Blumenau y a 48 km de Itajaí. Todos los alojamientos disponen de patio con vistas al lago, cocina con microondas y nevera y baño compartido. El camping cuenta con barbacoa. En la zona se puede practicar senderismo, ciclismo y piragüismo.',
         availabilityFrom: today.valueOf() + 432000000, // 5 days
         availabilityTo: today.valueOf() + 864000000, // 10 days
         rooms: 25,
-        city: 'Santa Catarina',
+        city: 'Pomerode',
         country: 'Brasil',
-        price: 4
+        price: 400
     },
     {
-        slug: 'alto-atacama',
-        name: 'Alto Atacama',
+        id: 13,
+        slug: 'los-olivos-del-morro',
+        name: 'Los Olivos Del Morro',
         photo: 'alto-atacama.jpg',
-        description: 'Alto Atacama Desert Lodge & Spa is a distinguished refuge located at the foot of the Pukará de Quitor in the imposing Atacama Desert in northern Chile.',
+        description: 'Situado a solo 150 metros de la Playa El Morro, y a unos 15 kilómetros de Bahía Inglesa, es el lugar perfecto para disfrutar del aire libre. Los huéspedes hallarán zonas de parrilla, así como un bazar de alimentación. El camping igualmente tiene sanitarios y wifi. Cerca hallará muchas atracciones turísticas',
         availabilityFrom: today.valueOf(),
         availabilityTo: today.valueOf() + 864000000, // 10 days
         rooms: 42,
         city: 'San Pedro de Atacama',
         country: 'Chile',
-        price: 4
+        price: 400
     },
     {
-        slug: 'tierra-patagonia',
-        name: 'Tierra Patagonia',
+        id: 14,
+        slug: 'camping-calafquen',
+        name: 'Camping Calafquen',
         photo: 'tierra-patagonia.jpg',
-        description: 'Tierra Patagonia Hotel & Spa is a luxurious boutique hotel located in Chilean Patagonia on the shores of Lake Sarmiento, surrounded by the extraordinary natural scenery of Torres del Paine, a national park surrounded by mountains, waterfalls, glaciers, lakes and crags, declared a Reserve of the Biosphere by UNESCO in 1978.',
+        description: 'Emplazado en un majestuoso bosque nativo de 30 hectáreas, a orilla del Lago Calafquén, destaca por tener una amplia playa de 1.5 kilómetros de extensión que incluye embarcaderos privados. El centro ofrece 83 sitios de camping con luz y agua, quinchos. Durante la temporada alta se organizan actividades recreativas.',
         availabilityFrom: today.valueOf() + 2592000000, // 30 days
         availabilityTo: today.valueOf() + 3456000000, // 40 days
         rooms: 40,
-        city: 'Torres del Paine',
+        city: 'Licanray',
         country: 'Chile',
-        price: 4
+        price: 400
     },
     {
-        slug: 'vira-vira',
-        name: 'Vira Vira',
+        id: 15,
+        slug: 'camping-extremo',
+        name: 'Camping Extremo',
         photo: 'vira-vira.jpg',
-        description: 'Hotel Hacienda Vira Vira Relais & Chateaux is located in a privileged location, very close to Pucón, Chile. Its impressive 23-hectare native park on the banks of the Liucura River offers a unique oasis of peace and tranquility.',
+        description: 'Se encuentra a las proximidades de las termas del río Chillán, posee infraestructura para personas con movilidad reducida, servicio de refrigeración y acepta mascotas. Se puede acampar o disfrutar de un día de picnic. Cuenta con tinas calientes, cuadrimotos y se puede ir en kayak.',
         availabilityFrom: today.valueOf() + 864000000, // 10 days
         availabilityTo: today.valueOf() + 1728000000, // 20 days
         rooms: 21,
-        city: 'Pucón',
+        city: 'Chillán',
         country: 'Chile',
-        price: 4
+        price: 400
     },
     {
-        slug: 'vik-chile',
-        name: 'Vik Chile',
+        id: 16,
+        slug: 'bosque-nativo',
+        name: 'Bosque Nativo',
         photo: 'vik-chile.jpg',
-        description: 'Vik Chile is a modern and sophisticated hacienda where avant-garde art and design converge, an unparalleled location, fabulous natural settings, personalized service and careful attention to the environment.',
+        description: 'Para los que buscan tranquilidad, cuenta con amplios sitios a orillas del rio Caliboro, ideal para su descanso con abundante sombra en bosque nativo con avistamiento de aves silvestres.',
         availabilityFrom: today.valueOf() + 432000000, // 5 days
         availabilityTo: today.valueOf() + 1728000000, // 20 days
         rooms: 22,
-        city: 'Millahue',
+        city: 'Los Angeles',
         country: 'Chile',
-        price: 4
+        price: 400
     },
     {
-        slug: 'casa-higueras',
-        name: 'Casa Higueras',
+        id: 17,
+        slug: 'cabaña-de-estilo',
+        name: 'Cabaña de Estilo',
         photo: 'casa-higueras.jpg',
-        description: "Located in the heart of Cerro Alegre, facing the imposing bay of Valparaíso, is Casa Higueras, the port's first boutique and design hotel.",
+        description: "Es un entorno Natural ùnico en Mercedes. Todos los alojamientos disponen de zona de estar con sofá, comedor y cocina totalmente equipada con microondas, nevera y fogones, aire acondicionado y acceso a un jardín. Fray Bentos se encuentra a 28 km del camping, mientras que Dolores está a 38 km.",
         availabilityFrom: today.valueOf() + 432000000, // 5 days
         availabilityTo: today.valueOf() + 1296000000, // 15 days
         rooms: 20,
-        city: 'Valparaíso',
-        country: 'Chile',
-        price: 4
+        city: 'Mercedes',
+        country: 'Uruguay',
+        price: 400
     },
     {
-        slug: 'campo-tinto',
-        name: 'Campo Tinto',
+        id: 18,
+        slug: 'los-piamonteses',
+        name: 'Los Piamonteses',
         photo: 'campo-tinto.jpg',
-        description: 'Campo Tinto is a 25-hectare farm located in the heart of San Roque, in the middle of the rolling Carmelo, an area of farms, vineyards, wineries and fruit trees, with a lot of history and a calm and natural rhythm of life.',
+        description: 'Se encuentra a 9,2 km de Boca del Rosario. Ofrece un jardín con piscina al aire libre. Todos los alojamientos son independientes y cuentan con cocina equipada con nevera, baño privado con ducha y tienen balcón con vistas al lago. El camping alberga una terraza. En las inmediaciones se puede pescar.',
         availabilityFrom: today.valueOf() + 2160000000, // 25 days
         availabilityTo: today.valueOf() + 2592000000, // 30 days
         rooms: 4,
         city: 'Colonia',
         country: 'Uruguay',
-        price: 1
+        price: 100
     }
 ]

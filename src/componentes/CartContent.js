@@ -2,17 +2,13 @@ import CartItem from "./CartItem";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
 import { IconButton } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
 import { Button } from "@mui/material"
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import { useModal } from "../hooks/useModal";
 
 const CartContent = () => {
 
-    const { data, delFromCart, clearCart, closeModal } = useContext(CartContext)
-    // const [closeModal] = useModal(false);
-
+    const { data, delFromCart, clearCart } = useContext(CartContext)
 
     const [total, setTotal] = useState(0);
 

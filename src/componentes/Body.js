@@ -20,7 +20,7 @@ const Body = () => {
 
     return (
         <>
-            <h2 style={titleStyle}>Paquetes en Mendoza</h2>
+            <h2 style={titleStyle}>Paquetes exclusivos en Mendoza</h2>
             <div className="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-0">
                 {/* {data.products.map((product) =>
                             <ProductItem key={product.id} data={product} addToCart={addToCart} />
@@ -30,14 +30,15 @@ const Body = () => {
                         data.length === 0 ? null :
                             data.products.map((product, index) =>
                                 <div className="col p-5">
-                                    <div key={index} className="card" >
-                                        <img src={require(`../assets/img/${product.image}`)} className="card-img-top" height="300px" alt="card_img" />
+                                    <div key={index} className="card h-100" >
+                                        <img src={require(`../assets/img/${product.image}`)} className="card-img-top d-block w-100" alt="card_img" />
                                         <div className="card-body">
                                             <h5 className="card-title">{product.name}</h5>
-                                            <p className="card-text">{product.text}</p>
-                                            <p className="card-text">USD {product.price}</p>
+                                            <p className="card-text">{product.description}</p>
                                         </div>
                                         <div className="card-footer text-center">
+                                        <p className="card-text">USD {product.price}</p>
+
                                             <Button className='btn btn-outline-secondary border-0' style={{ color: "#FC7307" }}
                                                 onClick={() => { openModal(); addToCart(product.id) }} variant="text" startIcon={<ShoppingCartRounded />} type="button">
                                                 Reservar

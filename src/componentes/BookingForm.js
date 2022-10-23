@@ -1,13 +1,5 @@
 import '../assets/styles/BookingForm.scss';
 import { getFormattedToday, getCountryString, getPriceString, getDateString } from '../assets/data/utils';
-import { filtersData } from '../assets/data/data.js';
-import SearchResults from './SearchResult';
-import CampingList from './CampingList';
-import { hotelsData } from '../assets/data/data.js';
-import { filterHotels } from '../assets/data/utils';
-import { useState } from 'react';
-
-
 
 const BookingForm = ({ filters, onFilter, onClearFilter }) => {
     //State
@@ -22,10 +14,6 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
         onClearFilter();
     }
 
-    const [filterList] = useState(filtersData);
-    let filteredHotelList = filterHotels(hotelsData, filterList);
-
-
     return (
         <>
             <header className="Header">
@@ -34,8 +22,8 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
                         <select className="Filter__Countries Filter-Icon" onChange={handleFilters} name="filter-countries" id="filter-countries" value={countryFilter.value}>
                             <option value="all">Todos los países</option>
                             <option value="country1">Argentina</option>
-                            <option value="country2">Chile</option>
-                            <option value="country3">Perú</option>
+                            <option value="country2">Brasil</option>
+                            <option value="country3">Chile</option>
                             <option value="country4">Uruguay</option>
                         </select>
 
@@ -63,10 +51,6 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
                 <div className="FoundMessage__Container">
                     <p className="FoundMessage__Title">Encontramos para vos...</p>
                     <p className="FoundMessage__Content">Campings de {getPriceString(priceFilter.value)} {getDateString(dateFromFilter.value, dateToFilter.value)} en {getCountryString(countryFilter.value)}.</p>
-                    <button className="Filter__Clear" data-bs-toggle="collapse" data-bs-target="#demo">Ver</button>
-                    <div id="demo" className="collapse" style={{ background: "white", color: "black", padding: "10px", marginTop: "10px" }}>
-                        <SearchResults hotels={<CampingList filteredHotels={filteredHotelList} />} />
-                    </div>
                 </div>
             </header>
         </>

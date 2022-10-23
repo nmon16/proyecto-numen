@@ -1,7 +1,6 @@
-import { FaHome } from "react-icons/fa";
 import NavBar from "./NavBar";
 import image1 from "../assets/img/camping-world-22.svg"
-import { FaOpencart } from "react-icons/fa";
+import { FaOpencart, FaRegUser } from "react-icons/fa";
 import CartContent from "./CartContent";
 import Modal from "./Modal";
 import { useModal } from "../hooks/useModal";
@@ -10,6 +9,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Badge from '@mui/material/Badge';
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
+import image from "../assets/img/img_ppal2.jpg"
 
 const ShoppingCards = () => {
 
@@ -19,7 +19,7 @@ const ShoppingCards = () => {
 
   return (
     <>
-      <div className="container-fluid mx-auto" style={{ marginTop: "5px", width: "95%", height: "150px", borderRadius: "30px", backgroundColor: "#FC7307", display: "flex" }}>
+      <div className="container-fluid mx-auto" style={{ height: "150px", backgroundColor: "#FC7307", display: "flex" }}>
 
         <div className="container">
           <a style={{ marginLeft: "10px", width: "150px", height: "150px", display: "flex" }} ><img src={image1} alt="logo" className="img-fluid "></img></a>
@@ -28,9 +28,10 @@ const ShoppingCards = () => {
         <ul style={{ display: "flow", flexFlow: "row nowrap", alignItems: "center" }} className="nav">
 
           <li className="nav-item">
-            <a style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" ><FaHome size={30} /></a>
+              <button style={{ fontSize: "20px", margin: "5px" }} disabled="disabled" title="Próximamente" className="btn btn-dark" >
+                <FaRegUser size={30} />
+              </button>
           </li>
-          {/* <Modals/> */}
           <button onClick={openModal} style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" >
             <Badge badgeContent={data.cart.length} color="primary">
               <FaOpencart style={{ fontSize: "30px" }} />
@@ -49,6 +50,12 @@ const ShoppingCards = () => {
 
       <NavBar />
 
+      <div className="p-5 text-bg-dark" style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", height: "500px" }}>
+        <div className="container py-5 d-flex flex-wrap justify-content-between align-content-around">
+          <h1 className="display-5 fw-bold text-wrap mx-auto">Los mejores campings para vivir un viaje increíble</h1>
+        </div>
+      </div>
+      
     </>
   );
 };
