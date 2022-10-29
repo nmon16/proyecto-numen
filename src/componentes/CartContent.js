@@ -28,9 +28,9 @@ const CartContent = () => {
                 </div>
             </div>
             <article className="p-3">
-                {
-                    data.cart.map((item, index) => (<CartItem key={index} data={item} delFromCart={delFromCart} />))
-                }
+                    {
+                        data.cart.map((item, index) => (<CartItem key={index} data={item} delFromCart={delFromCart} />))
+                    }
             </article>
             <div className="d-flex justify-content-around">
                 <p style={{ color: "black", fontSize: "25px" }}>Subtotal</p>

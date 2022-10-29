@@ -2,36 +2,24 @@
     "cartInitialState": {
         "products": [
             {
-                "id": 0,
-                "slug": "viñedos",
+                "id": 1,
                 "name": "Viñedos",
                 "image": "viñedos.jpg",
                 "description": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
-                "rooms": 0,
-                "city": "Mendoza",
-                "country": "Argentina",
                 "price": "500"
             },
             {
-                "id": 1,
-                "slug": "rafting",
+                "id": 2,
                 "name": "Rafting",
                 "image": "rafting.jpg",
                 "description": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
-                "rooms": 0,
-                "city": "Mendoza",
-                "country": "Argentina",
                 "price": "600"
             },
             {
-                "id": 2,
-                "slug": "aconcagua",
+                "id": 3,
                 "name": "Aconcagua",
                 "image": "aconcagua.jpg",
                 "description": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
-                "rooms": 0,
-                "city": "Mendoza",
-                "country": "Argentina",
                 "price": "700"
             }
         ],
@@ -148,4 +136,5 @@
             }
         ]
     }
+    
 }

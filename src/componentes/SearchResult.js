@@ -1,12 +1,12 @@
 import '../assets/styles/Main/Main.scss'
 
-const SearchResults = ({hotels}) => {
+const SearchResults = ({campings}) => {
 
     
     return (
         <>
         <main className="Main">
-            {hotels}
+            {campings}
         </main>
         </>
     );

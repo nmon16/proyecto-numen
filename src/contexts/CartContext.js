@@ -7,7 +7,6 @@ export const CartContext = createContext();
 
 function CartContextProvider({ children }) {
 
-
     const [data, dispatch] = useLocalStorage('data', shoppingInitialState, shoppingReducer);
 
     const {closeModal} = useModal(false);

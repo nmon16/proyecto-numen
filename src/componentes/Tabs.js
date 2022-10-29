@@ -35,10 +35,10 @@ const Tabs = () => {
                                     {data.tours.map((tab, index) =>
                                         <Container fluid key={index} hidden={tabIndex !== tab.id}>
                                             <Row style={rowStyle}>
-                                                <Col xl>
+                                                <Col xl className="d-block w-100 p-2">
                                                     <iframe src={tab.video} className="d-block w-100 h-100" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                                                 </Col>
-                                                <Col xl>
+                                                <Col xl className="d-block w-100 p-2">
                                                     <img src={require(`../assets/img/${tab.image}`)} className="d-block w-100" alt="img" />
                                                 </Col>
                                             </Row>

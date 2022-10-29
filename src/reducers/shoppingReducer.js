@@ -12,34 +12,33 @@ export const ACTIONS = {
 export const shoppingInitialState = {
   products: [
     {
-        id: 1,
-        name: 'Viñedos',
-        image: image1,
-        text: 'Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.',
-        price: '500'
+      id: 1,
+      name: 'Viñedos',
+      image: image1,
+      text: 'Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.',
+      price: '500'
     },
     {
-        id: 2,
-        name: 'Rafting',
-        image: image2,
-        text : 'Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.',
-        price: '600'
+      id: 2,
+      name: 'Rafting',
+      image: image2,
+      text: 'Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.',
+      price: '600'
 
     },
     {
-        id: 3,
-        name: 'Aconcagua',
-        image: image3,
-        text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.',
-        price: '700'
-
-    },
-],
+      id: 3,
+      name: 'Aconcagua',
+      image: image3,
+      text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.',
+      price: '700'
+    }
+  ],
   cart: []
 };
 
 
-export function shoppingReducer(state , action) {
+export function shoppingReducer(state, action) {
   switch (action.type) {
     case ACTIONS.ADD_TO_CART: {
       let newItem = state.products.find(
@@ -51,34 +50,34 @@ export function shoppingReducer(state , action) {
 
       return itemInCart
         ? {
-            ...state,
-            cart: state.cart.map((item) =>
-              item.id === newItem.id
-                ? { ...item, quantity: item.quantity + 1 }
-                : item
-            ),
-          }
+          ...state,
+          cart: state.cart.map((item) =>
+            item.id === newItem.id
+              ? { ...item, quantity: item.quantity + 1 }
+              : item
+          ),
+        }
         : {
-            ...state,
-            cart: [...state.cart, { ...newItem, quantity: 1 }],
-          };
+          ...state,
+          cart: [...state.cart, { ...newItem, quantity: 1 }],
+        };
     }
     case ACTIONS.REMOVE_ONE_FROM_CART: {
       let itemToDelete = state.cart.find((item) => item.id === action.payload);
 
       return itemToDelete.quantity > 1
         ? {
-            ...state,
-            cart: state.cart.map((item) =>
-              item.id === action.payload
-                ? { ...item, quantity: item.quantity - 1 }
-                : item
-            ),
-          }
+          ...state,
+          cart: state.cart.map((item) =>
+            item.id === action.payload
+              ? { ...item, quantity: item.quantity - 1 }
+              : item
+          ),
+        }
         : {
-            ...state,
-            cart: state.cart.filter((item) => item.id !== action.payload),
-          };
+          ...state,
+          cart: state.cart.filter((item) => item.id !== action.payload),
+        };
     }
     case ACTIONS.REMOVE_ALL_FROM_CART: {
       return {

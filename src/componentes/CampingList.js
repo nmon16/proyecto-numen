@@ -1,34 +1,37 @@
-import CampingCard from './CampingCard';
 
-const CampingList = ({filteredHotels}) => {
-    return filteredHotels.length > 0 ? 
-    (
-        <section className="HotelsContainer">
-            { filteredHotels.map((hotel) => {
-                return(
-                    <CampingCard
-                    key = {"h-" + hotel.name} 
-                    slug = {hotel.slug}
-                    name = {hotel.name}
-                    photo = {hotel.photo}
-                    description = {hotel.description}
-                    availabilityFrom = {hotel.availabilityFrom}
-                    availabilityTo = {hotel.availabilityTo}
-                    rooms = {hotel.rooms}
-                    city = {hotel.city}
-                    country = {hotel.country}
-                    price = {hotel.price}
-                />
-                );
-            })    
-            }
-        </section>
-    ):(   
-        <section className="HotelsNotFound">
-            <img className="HotelsNotFound__Icon" src={require(`../assets/img/Main/InfoIcon/information.svg`)} alt="information icon" role="presentation" aria-hidden="true" focusable="false" />
-            <p className="HotelsNotFound__Message">No hotels left with those filters. Try a new combination of them. </p> 
-        </section>
-    )
+import CampingCard from './CampingCard';
+import imageInfo from '../assets/img/InfoIcon/information.svg'
+
+const CampingList = ({ filteredCampings }) => {
+
+    return filteredCampings.length > 0 ?
+        (
+            <section className="HotelsContainer">
+                {filteredCampings.map((camping) => {
+                    return (<CampingCard
+                        key={"h-" + camping.name}
+                        slug={camping.slug}
+                        name={camping.name}
+                        image={camping.image}
+                        text={camping.text}
+                        availabilityFrom={camping.availabilityFrom}
+                        availabilityTo={camping.availabilityTo}
+                        rooms={camping.rooms}
+                        city={camping.city}
+                        country={camping.country}
+                        price={camping.price}
+                        phone={camping.phone}
+                        url={camping.url}
+                    />);
+                }
+                )}
+            </section>
+        ) : (
+            <section className="HotelsNotFound">
+                <img className="HotelsNotFound__Icon" src={imageInfo} alt="information icon" role="presentation" aria-hidden="true" focusable="false" />
+                <p className="HotelsNotFound__Message">No quedan hoteles con esos filtros. Pruebe una nueva combinación de ellos. </p>
+            </section>
+        )
 }
 
 export default CampingList;

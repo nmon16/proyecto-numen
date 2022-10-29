@@ -1,19 +1,14 @@
-import { Button } from "@mui/material"
-import { useContext, useState } from 'react';
-import { ACTIONS_ADULT, ACTIONS_CHILD, guestChildReducer } from "../reducers/guestOptionReducer";
-import { useReducer } from "react";
-import guestAdultReducer from "../reducers/guestOptionReducer";
+import { useContext } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import IconButton from '@mui/material/IconButton';
-import { shoppingReducer } from "../reducers/shoppingReducer";
 import { CartContext } from "../contexts/CartContext";
 import DeleteIcon from '@mui/icons-material/Delete';
 
-const CartItem = ({ data }) => {
-  let { id, name, price, quantity } = data;
+const CartItem = ({data}) => {
 
   const { addToCart, delFromCart } = useContext(CartContext)
+  let { id, name, price, quantity } = data;
 
   return (
     <div style={{ borderBottom: "thin solid gray" }}>
@@ -34,7 +29,7 @@ const CartItem = ({ data }) => {
           </IconButton>
         </div> = USD {price * quantity}.00
         <IconButton>
-          <DeleteIcon onClick={() => delFromCart(id, true)}>Eliminar Todos</DeleteIcon>
+          <DeleteIcon onClick={() => delFromCart(id, true)}></DeleteIcon>
         </IconButton>
       </div>
     </div>
