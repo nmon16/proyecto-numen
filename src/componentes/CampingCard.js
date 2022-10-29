@@ -27,9 +27,9 @@ const CampingCard = ({ name, country, price, text, image, url }) => {
 
                     </div>
                     <p className="HotelCard__Description">{text}</p>
+                    <a className="btn btn-primary" href={url} target="_blank" role="button">+Info</a>
                 </section>
                 {/* <button className="HotelCard__More" id="HotelCard__More" onClick={handleTap}>+</button> */}
-                <a className="btn btn-primary" href={url} target="_blank" role="button">+Info</a>
             </article>
         </>
     );
