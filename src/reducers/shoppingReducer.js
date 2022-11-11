@@ -1,6 +1,6 @@
-import image1 from '../assets/img/viñedos.jpg'
-import image2 from '../assets/img/rafting.jpg'
-import image3 from '../assets/img/aconcagua.jpg'
+import image1 from '../assets/img/PackagesCards/viñedos.jpg'
+import image2 from '../assets/img/PackagesCards/rafting.jpg'
+import image3 from '../assets/img/PackagesCards/aconcagua.jpg'
 
 export const ACTIONS = {
   ADD_TO_CART: "ADD_TO_CART",
@@ -9,17 +9,18 @@ export const ACTIONS = {
   CLEAR_CART: "CLEAR_CART",
 };
 
+
 export const shoppingInitialState = {
   products: [
     {
-      id: 1,
+      id: 0,
       name: 'Viñedos',
       image: image1,
       text: 'Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.',
       price: '500'
     },
     {
-      id: 2,
+      id: 1,
       name: 'Rafting',
       image: image2,
       text: 'Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.',
@@ -27,7 +28,7 @@ export const shoppingInitialState = {
 
     },
     {
-      id: 3,
+      id: 2,
       name: 'Aconcagua',
       image: image3,
       text: 'El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.',
@@ -37,15 +38,13 @@ export const shoppingInitialState = {
   cart: []
 };
 
-
-export function shoppingReducer(state, action) {
+export function shoppingReducer(state = shoppingInitialState, action) {
   switch (action.type) {
     case ACTIONS.ADD_TO_CART: {
+
       let newItem = state.products.find(
         (product) => product.id === action.payload
       );
-      //console.log(newItem);
-
       let itemInCart = state.cart.find((item) => item.id === newItem.id);
 
       return itemInCart

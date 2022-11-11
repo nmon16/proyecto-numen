@@ -2,24 +2,24 @@
     "cartInitialState": {
         "products": [
             {
-                "id": 1,
+                "id": 0,
                 "name": "Viñedos",
                 "image": "viñedos.jpg",
-                "description": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
+                "text": "Por su ubicacion geografica, la provincia de Mendoza tiene buenas condiciones para la produccion de vino.",
                 "price": "500"
             },
             {
-                "id": 2,
+                "id": 1,
                 "name": "Rafting",
                 "image": "rafting.jpg",
-                "description": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
+                "text": "Argentina Rafting Expeditions es su destino para todos sus deportes de aventura en Mendoza.",
                 "price": "600"
             },
             {
-                "id": 3,
+                "id": 2,
                 "name": "Aconcagua",
                 "image": "aconcagua.jpg",
-                "description": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
+                "text": "El Aconcagua es una montaña ubicada en el departamento Las Heras, provincia de Mendoza.",
                 "price": "700"
             }
         ],
@@ -29,43 +29,43 @@
         "img": [
             {
                 "id": 0,
-                "name": "1amanecer.jpg"
+                "name": "amanecer.jpg"
             },
             {
                 "id": 1,
-                "name": "2mañana.jpg"
+                "name": "mañana.jpg"
             },
             {
                 "id": 2,
-                "name": "3taza.jpg"
+                "name": "taza.jpg"
             },
             {
                 "id": 3,
-                "name": "4arroyo.jpg"
+                "name": "arroyo.jpg"
             },
             {
                 "id": 4,
-                "name": "5kayak.jpg"
+                "name": "kayak.jpg"
             },
             {
                 "id": 5,
-                "name": "6lago.jpg"
+                "name": "lago.jpg"
             },
             {
                 "id": 6,
-                "name": "7atardecer.jpg"
+                "name": "atardecer.jpg"
             },
             {
                 "id": 7,
-                "name": "8personas.jpg"
+                "name": "personas.jpg"
             },
             {
                 "id": 8,
-                "name": "9fogata.jpg"
+                "name": "fogata.jpg"
             },
             {
                 "id": 9,
-                "name": "10banner_camping.jpg"
+                "name": "banner_camping.jpg"
             }
         ]
     },

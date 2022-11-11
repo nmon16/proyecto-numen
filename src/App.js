@@ -1,10 +1,11 @@
 import Tabs from "./componentes/Tabs";
 import Header from "./componentes/Header";
 import CartContextProvider from "./contexts/CartContext";
-import Body from "./componentes/Body";
+import Cards from "./componentes/Cards";
 import Carrousel from "./componentes/Carrousel";
 import Footer from "./componentes/Footer";
 import Booking from "./componentes/Booking";
+import "./assets/styles/App.css"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <CartContextProvider>
         <Header />
         <Booking />
-        <Body></Body>
+        <Cards></Cards>
         <Carrousel></Carrousel>
         <Tabs></Tabs>
         <Footer></Footer>

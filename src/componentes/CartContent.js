@@ -28,17 +28,17 @@ const CartContent = () => {
                 </div>
             </div>
             <article className="p-3">
-                    {
+                    { data.cart.length === 0 ? <p className="text-center fs-5">¡Tu carrito está vacío!</p> :
                         data.cart.map((item, index) => (<CartItem key={index} data={item} delFromCart={delFromCart} />))
                     }
             </article>
             <div className="d-flex justify-content-around">
-                <p style={{ color: "black", fontSize: "25px" }}>Subtotal</p>
-                <span style={{ color: "red", fontSize: "25px" }}>USD {total}</span>
+                <p className="text-black fs-4">Subtotal</p>
+                <span className="text-danger fs-4">USD {total}</span>
             </div>
-            <Button style={{ display: "block", marginRight: "auto", marginLeft: "auto", fontSize: "18px" }}>
-                <ShoppingCartCheckoutIcon />Check Out <ShoppingCartCheckoutIcon />
-            </Button>
+                <Button className="d-block mx-auto fs-6">
+                    <ShoppingCartCheckoutIcon />Check Out <ShoppingCartCheckoutIcon />
+                </Button>
         </>
     )
 }

@@ -8,5 +8,7 @@ export const useModal = () => {
 
   const closeModal = () => setIsOpen(false);
 
+
+
   return [isOpen, openModal, closeModal];
 };

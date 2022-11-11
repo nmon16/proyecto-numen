@@ -47,6 +47,8 @@ export const getSizeString = (sizeValue) => {
             return "Large-sized";
         case "all":
             return "All sizes";
+        default:
+            return "All sizes"
     }
 }
 
@@ -62,6 +64,8 @@ export const getPriceString = (priceValue) => {
         case "price4":
             return "categoría deluxe";
         case "all":
+            return "todas las categorías"
+        default:
             return "todas las categorías"
     }
 }
@@ -209,6 +213,7 @@ const getPriceNumber = (value) => {
 //Used in filtercampings() to categorize campings size according to the number of rooms
 const checkSizeWithRooms = (size, rooms) => {
 
+
     switch (size) {
         case "size1":
             if (rooms <= 10) {
@@ -225,6 +230,8 @@ const checkSizeWithRooms = (size, rooms) => {
                 return true;
             }
             else return false;
+        default:
+            return false
     }
 
 }

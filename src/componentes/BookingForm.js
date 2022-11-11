@@ -1,15 +1,12 @@
-import '../assets/styles/BookingForm.scss';
+import '../assets/styles/BookingForm.css';
 import { getFormattedToday, getCountryString, getPriceString, getDateString } from '../assets/data/utils';
 
 const BookingForm = ({ filters, onFilter, onClearFilter }) => {
-    //State
-    const [countryFilter, priceFilter, sizeFilter, dateFromFilter, dateToFilter] = filters;
 
-    //Handlers
+    const [countryFilter, priceFilter, sizeFilter, dateFromFilter, dateToFilter] = filters;
     const handleFilters = (e) => {
         onFilter(e.target.id, e.target.value);
     }
-
     const handleClearButton = (e) => {
         onClearFilter();
     }
@@ -27,8 +24,10 @@ const BookingForm = ({ filters, onFilter, onClearFilter }) => {
                             <option value="country4">Uruguay</option>
                         </select>
 
+                        <label class="visually-hidden" for="date-from"></label>
                         <input className="Filter__DateFrom Filter-Icon" name="date-from" id="date-from" onChange={handleFilters} min={getFormattedToday()} max={dateToFilter.value} type="date" value={dateFromFilter.value} />
-
+                        
+                        <label class="visually-hidden" for="date-to"></label>
                         <input className="Filter__DateTo Filter-Icon" name="date-to" id="date-to" onChange={handleFilters} type="date" min={dateFromFilter.value > getFormattedToday() ? dateFromFilter.value : getFormattedToday()} value={dateToFilter.value} />
 
                         <select className="Filter__Prices Filter-Icon" onChange={handleFilters} name="filter-prices" id="filter-prices" value={priceFilter.value}>

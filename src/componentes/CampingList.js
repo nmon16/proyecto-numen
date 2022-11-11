@@ -1,12 +1,12 @@
 
 import CampingCard from './CampingCard';
-import imageInfo from '../assets/img/InfoIcon/information.svg'
+import imageInfo from '../assets/img/CampingCards/InfoIcon/information.svg'
 
 const CampingList = ({ filteredCampings }) => {
 
     return filteredCampings.length > 0 ?
         (
-            <section className="HotelsContainer">
+            <section className="CampingsContainer">
                 {filteredCampings.map((camping) => {
                     return (<CampingCard
                         key={"h-" + camping.name}
@@ -27,9 +27,9 @@ const CampingList = ({ filteredCampings }) => {
                 )}
             </section>
         ) : (
-            <section className="HotelsNotFound">
-                <img className="HotelsNotFound__Icon" src={imageInfo} alt="information icon" role="presentation" aria-hidden="true" focusable="false" />
-                <p className="HotelsNotFound__Message">No quedan hoteles con esos filtros. Pruebe una nueva combinación de ellos. </p>
+            <section className="CampingsNotFound">
+                <img className="CampingsNotFound__Icon" src={imageInfo} alt="information icon" role="presentation" aria-hidden="true" focusable="false" />
+                <p className="CampingsNotFound__Message">No quedan campings con esos filtros. Pruebe una nueva combinación de ellos. </p>
             </section>
         )
 }

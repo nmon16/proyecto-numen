@@ -1,6 +1,5 @@
 import { createContext } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
-import { useModal } from "../hooks/useModal";
 import { ACTIONS, shoppingInitialState, shoppingReducer } from "../reducers/shoppingReducer";
 
 export const CartContext = createContext();
@@ -9,10 +8,7 @@ function CartContextProvider({ children }) {
 
     const [data, dispatch] = useLocalStorage('data', shoppingInitialState, shoppingReducer);
 
-    const {closeModal} = useModal(false);
-
     const addToCart = (id) => {
-        console.log(id);
         dispatch({ type: ACTIONS.ADD_TO_CART, payload: id });
     };
 
@@ -29,7 +25,7 @@ function CartContextProvider({ children }) {
     };
 
     return (
-        <CartContext.Provider value={{ data, addToCart, delFromCart, clearCart, closeModal }}>
+        <CartContext.Provider value={{ data, addToCart, delFromCart, clearCart }}>
             {children}
         </CartContext.Provider>
     )

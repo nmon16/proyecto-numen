@@ -1,4 +1,4 @@
-import '../assets/styles/Main/Main.scss'
+import '../assets/styles/Search.css'
 
 const SearchResults = ({campings}) => {
 

@@ -11,7 +11,7 @@ const CartItem = ({data}) => {
   let { id, name, price, quantity } = data;
 
   return (
-    <div style={{ borderBottom: "thin solid gray" }}>
+    <div>
       <h4>{name}</h4>
       <div className="d-flex align-items-center">
         USD {price}.00
@@ -20,9 +20,7 @@ const CartItem = ({data}) => {
             <AddIcon fontSize="small" />
           </IconButton>
         </div>
-
         <div><span>{quantity}</span></div>
-
         <div>
           <IconButton aria-label="remove" size="small" onClick={() => delFromCart(id)}>
             <RemoveIcon fontSize="small" />

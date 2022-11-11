@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import image1 from "../assets/img/camping-world-22.svg"
+import image1 from "../assets/img/Icons/camping_world_header.svg"
 import { FaOpencart, FaRegUser } from "react-icons/fa";
 import CartContent from "./CartContent";
 import Modal from "./Modal";
@@ -9,7 +9,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Badge from '@mui/material/Badge';
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
-import image from "../assets/img/img_ppal2.jpg"
 
 const ShoppingCards = () => {
 
@@ -19,27 +18,29 @@ const ShoppingCards = () => {
 
   return (
     <>
-      <div className="container-fluid mx-auto" style={{ height: "150px", backgroundColor: "#FC7307", display: "flex" }}>
+      <div className="container-fluid d-flex h-auto color1">
 
         <div className="container">
-          <a style={{ marginLeft: "10px", width: "150px", height: "150px", display: "flex" }} ><img src={image1} alt="logo" className="img-fluid "></img></a>
+          <a className="navbar-brand" href="http://localhost:3000/">
+            <img src={image1} alt="logo" width="200" height="175"></img>
+          </a>
         </div>
 
-        <ul style={{ display: "flow", flexFlow: "row nowrap", alignItems: "center" }} className="nav">
+        <ul  className="nav d-flex flex-nowrap align-items-center">
 
-          <li className="nav-item">
-              <button style={{ fontSize: "20px", margin: "5px" }} disabled="disabled" title="Próximamente" className="btn btn-dark" >
-                <FaRegUser size={30} />
-              </button>
+          <li className="nav-item ">
+            <button disabled="disabled" title="Próximamente" className="btn btn-dark fs-5" >
+              <FaRegUser size={30} />
+            </button>
           </li>
-          <button onClick={openModal} style={{ fontSize: "20px", margin: "5px" }} className="btn btn-dark" >
+          <button onClick={openModal} className="btn btn-dark ms-1 fs-5" >
             <Badge badgeContent={data.cart.length} color="primary">
-              <FaOpencart style={{ fontSize: "30px" }} />
+              <FaOpencart size={30} />
             </Badge>
           </button>
           <Modal isOpen={isOpenModal} closeModal={closeModal}>
             <div className='d-flex justify-content-end'>
-              <IconButton onClick={closeModal} className="bg-primary">
+              <IconButton onClick={closeModal} className="bg-light">
                 <CloseIcon />
               </IconButton>
             </div>
@@ -50,12 +51,12 @@ const ShoppingCards = () => {
 
       <NavBar />
 
-      <div className="p-5 text-bg-dark" style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", height: "500px" }}>
+      <div className="p-5 text-bg-dark headerImg">
         <div className="container py-5 d-flex flex-wrap justify-content-between align-content-around">
           <h1 className="display-5 fw-bold text-wrap mx-auto">Los mejores campings para vivir un viaje increíble</h1>
         </div>
       </div>
-      
+
     </>
   );
 };
